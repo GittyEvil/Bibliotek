@@ -1,0 +1,5 @@
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Release\net6.0\Bibliotek.csproj.AssemblyReference.cache
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Release\net6.0\Bibliotek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Release\net6.0\Bibliotek.AssemblyInfoInputs.cache
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Release\net6.0\Bibliotek.AssemblyInfo.cs
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Release\net6.0\Bibliotek.csproj.CoreCompileInputs.cache

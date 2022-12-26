@@ -3,3 +3,13 @@ C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\ne
 C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.AssemblyInfoInputs.cache
 C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.AssemblyInfo.cs
 C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.csproj.CoreCompileInputs.cache
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\bin\Debug\net6.0\Bibliotek.exe
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\bin\Debug\net6.0\Bibliotek.deps.json
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\bin\Debug\net6.0\Bibliotek.runtimeconfig.json
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\bin\Debug\net6.0\Bibliotek.dll
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\bin\Debug\net6.0\Bibliotek.pdb
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.dll
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\refint\Bibliotek.dll
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.pdb
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.genruntimeconfig.cache
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\ref\Bibliotek.dll
