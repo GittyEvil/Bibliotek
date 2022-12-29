@@ -34,7 +34,7 @@
         {
 
             bool admin = true;
-            int kod = 12455;
+            int adminkod = 12455;
 
             public Bibliotikarie(string förnamn, string efternamn, int personnummer) : base(förnamn, efternamn, personnummer)
             {
@@ -58,15 +58,16 @@
             Console.WriteLine("|                             |");
             Console.WriteLine("-------------------------------");
             Console.WriteLine("");
+            Console.Clear();
 
             string val = Console.ReadLine();
             if(val == "1")
             {
-                //SkapaKonto()
+                SkapaKonto();
             }
             if(val == "")
             {
-                //LoggaIn()
+                LoggaIn();
             }
         }
 
@@ -82,15 +83,26 @@
             Console.WriteLine("|                             |");
             Console.WriteLine("|                             |");
             Console.WriteLine("-------------------------------");
-
+            Console.Clear();
             string val = Console.ReadLine();
             if(val =="1")
             {
-                //skapa konto som vikarie
+
+                Console.WriteLine("skriv användarnamn:");
+                Console.ReadLine();
+                Console.WriteLine("skriv ett lösenord");
+                Console.ReadLine();
+                Console.WriteLine("skriv adminkoden");
+                Console.ReadLine();
+                Console.WriteLine("du har nu skapat ett konto.");
             }
             if (val == "2")
             {
-                //skapa konto som användare
+                Console.WriteLine("skriv användarnamn:");
+                Console.ReadLine();
+                Console.WriteLine("skriv ett lösenord");
+                Console.ReadLine();
+                Console.WriteLine("du har nu skapat ett konto.");
             }
         }
 
@@ -104,6 +116,20 @@
             Console.WriteLine("|                             |");
             Console.WriteLine("-------------------------------");
             Console.WriteLine("");
+            Console.Clear();
+
+
+            string val = Console.ReadLine();
+            if (val == "1")
+            {
+                //logga in som vikarie
+            }
+            if (val == "2")
+            {
+                //logga in som användare
+            }
         }
+
+
     }
 }
