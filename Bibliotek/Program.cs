@@ -11,7 +11,13 @@
         static void Main(string[] args)
         {
             FirstPage();
+
+            List<string> Konton = new List<string>();
+            Konton.Add("forre");
         }
+
+
+
 
         //class för användaren
         public class Användare : Person
@@ -58,17 +64,18 @@
             Console.WriteLine("|                             |");
             Console.WriteLine("-------------------------------");
             Console.WriteLine("");
-            Console.Clear();
+            //Console.Clear();
 
             string val = Console.ReadLine();
             if(val == "1")
             {
                 SkapaKonto();
             }
-            if(val == "")
+            if(val == "2")
             {
                 LoggaIn();
             }
+
         }
 
 
@@ -83,7 +90,7 @@
             Console.WriteLine("|                             |");
             Console.WriteLine("|                             |");
             Console.WriteLine("-------------------------------");
-            Console.Clear();
+            //Console.Clear();
             string val = Console.ReadLine();
             if(val =="1")
             {
@@ -116,7 +123,7 @@
             Console.WriteLine("|                             |");
             Console.WriteLine("-------------------------------");
             Console.WriteLine("");
-            Console.Clear();
+            //Console.Clear();
 
 
             string val = Console.ReadLine();
