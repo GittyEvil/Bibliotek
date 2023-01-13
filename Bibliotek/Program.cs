@@ -102,6 +102,7 @@
                 Console.WriteLine("skriv adminkoden");
                 Console.ReadLine();
                 Console.WriteLine("du har nu skapat ett konto.");
+                LoggaIn();
             }
             if (val == "2")
             {
@@ -110,6 +111,7 @@
                 Console.WriteLine("skriv ett lösenord");
                 Console.ReadLine();
                 Console.WriteLine("du har nu skapat ett konto.");
+                LoggaIn();
             }
         }
 
