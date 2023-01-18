@@ -14,8 +14,6 @@ namespace Bibliotek
         {
             FirstPage();
 
-            List<string> Konton = new List<string>();
-            Konton.Add("forre");
         }
 
 
@@ -71,100 +69,17 @@ namespace Bibliotek
             string val = Console.ReadLine();
             if(val == "1")
             {
-                SkapaKonto();
+                CreateAcc.SkapaKonto();
             }
             if(val == "2")
             {
-                LoggaIn();
+                Login.LoggaIn();
             }
 
         }
+       
 
-
-
-        //tänker mig UI då jag loggat in
-        static void SkapaKonto()
-        {
-
-            string användar_path = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
-            string bibliotikarie_path = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt";
-
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("|          Skapa konto        |");
-            Console.WriteLine("|          Vikarie(1)         |");
-            Console.WriteLine("|          användare(2)       |");
-            Console.WriteLine("|                             |");
-            Console.WriteLine("|                             |");
-            Console.WriteLine("-------------------------------");
-            //Console.Clear();
-            string val = Console.ReadLine();
-            if(val =="1")
-            {
-                Console.WriteLine("skriv användarnamn:");
-                string användarnamn = Console.ReadLine();
-                Console.WriteLine("skriv ett lösenord");
-                Console.ReadLine();
-                Console.WriteLine("skriv adminkoden");
-                string lösenord = Console.ReadLine();
-                Console.WriteLine("du har nu skapat ett konto.");
-                LoggaIn();
-
-
-                string[] lines1 = { $"{användarnamn} {lösenord}" };
-                System.IO.File.AppendAllLines(bibliotikarie_path, lines1);
-
-
-            }
-            if (val == "2")
-            {
-                Console.WriteLine("skriv användarnamn:");
-                string användarnamn = Console.ReadLine();
-                Console.WriteLine("skriv ett lösenord");
-                string lösenord = Console.ReadLine();
-                Console.WriteLine("du har nu skapat ett konto.");
-                string[] lines = { $"{användarnamn} {lösenord}" };
-                System.IO.File.AppendAllLines(användar_path, lines);
-                LoggaIn();
-            }
-        }
-
-        static void LoggaIn()
-        {
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("|          Logga in           |");
-            Console.WriteLine("|          Vikarie(1)         |");
-            Console.WriteLine("|          användare(2)       |");
-            Console.WriteLine("|                             |");
-            Console.WriteLine("|                             |");
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("");
-            //Console.Clear();
-
-
-            string[] Användarnamncheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt");
-            string[] bilbiotikariecheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt");
-
-            string val = Console.ReadLine();
-            if (val == "1")
-            {
-                //logga in som vikarie
-            }
-            if (val == "2")
-            {
-                while (true)
-                {
-                    Console.WriteLine("Vänligen skriv in ditt användarnamn");
-                    string användarnamncheck = Console.ReadLine();
-                    Console.WriteLine("Skriv in ditt lösenord");
-                    string lösenordcheck = Console.ReadLine();
-
-                    if(användarnamncheck && lösenordcheck)
-                    {
-
-                    }
-                }
-            }
-        }
+        
 
 
     }
