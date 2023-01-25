@@ -10,14 +10,34 @@ namespace Bibliotek
     {
         public static void Hemsida()
         {
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("|          Bibliotek          |");
-            Console.WriteLine("|        Skapa Konto(1)       |");
-            Console.WriteLine("|          Logga in(2)        |");
-            Console.WriteLine("|                             |");
-            Console.WriteLine("|                             |");
-            Console.WriteLine("-------------------------------");
             Console.WriteLine("du är inloggad");
+
+            Console.WriteLine("Vad vill du göra?");
+            Console.WriteLine("1, låna bok?");
+            Console.WriteLine("2, reservera bok?");
+            Console.WriteLine("3, lämna tillbaka en bok?");
+            Console.WriteLine("4,byta lösenord?");
+
+            string val = Console.ReadLine();
+
+            if (val == "1")
+            {
+                //låna bok
+            }
+            if (val == "2")
+            {
+                //reservera
+            }
+            if (val == "3")
+            {
+                //lämna tillbaka
+            }
+            if (val == "4")
+            {
+                //byta lösenord
+            }
+
+
         }
     }
 }

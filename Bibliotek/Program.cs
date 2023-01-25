@@ -17,8 +17,6 @@ namespace Bibliotek
         }
 
 
-
-
         //class för användaren
         public class Användare : Person
         {

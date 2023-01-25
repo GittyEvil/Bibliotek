@@ -23,35 +23,51 @@ namespace Bibliotek
 
 
 
-
             string[] Användarnamncheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt");
             string[] bilbiotikariecheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt");
 
 
             foreach (string line in Användarnamncheck)
             {
-                var spliting = line.Split(" ");
-                var användarnamn1 = spliting[0];
-                var lösenord1 = spliting[1];
-
-                string val = Console.ReadLine();
-
-                if (val == "1")
+                foreach(string lines in bilbiotikariecheck)
                 {
-                    //logga in som vikarie
-                }
-                if (val == "2")
-                {
-                    Console.WriteLine("Vänligen skriv in ditt användarnamn");
-                    string användarnamn = Console.ReadLine();
-                    Console.WriteLine("Skriv in ditt lösenord");
-                    string lösenord = Console.ReadLine();
+                    var spliting = line.Split(" ");
+                    var bibliotikariesplit = lines.Split(" ");
 
-                    if (användarnamn1 == användarnamn && lösenord1 == lösenord)
+                    var bibliotikarienamn = bibliotikariesplit[0];
+                    var bibliotikarielösenord = bibliotikariesplit[1];
+
+                    var användarnamn1 = spliting[0];
+                    var lösenord1 = spliting[1];
+
+                    string val = Console.ReadLine();
+
+                    if (val == "1")
                     {
-                        homepage.Hemsida();
+                        Console.WriteLine("Vänligen skriv in ditt användarnamn");
+                        string användarnamn = Console.ReadLine();
+                        Console.WriteLine("Skriv in ditt lösenord");
+                        string lösenord = Console.ReadLine();
+
+                        if (bibliotikarienamn == användarnamn && bibliotikarielösenord == lösenord)
+                        {
+                            homepage.Hemsida();
+                        }
+                    }
+                    if (val == "2")
+                    {
+                        Console.WriteLine("Vänligen skriv in ditt användarnamn");
+                        string användarnamn = Console.ReadLine();
+                        Console.WriteLine("Skriv in ditt lösenord");
+                        string lösenord = Console.ReadLine();
+
+                        if (användarnamn1 == användarnamn && lösenord1 == lösenord)
+                        {
+                            homepage.Hemsida();
+                        }
                     }
                 }
+               
 
 
             }
