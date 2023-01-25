@@ -69,7 +69,7 @@ namespace Bibliotek
             string val = Console.ReadLine();
             if(val == "1")
             {
-                CreateAcc.SkapaKonto();
+                Register.SkapaKonto();
             }
             if(val == "2")
             {

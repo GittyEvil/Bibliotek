@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bibliotek
 {
-    public class CreateAcc
+    public class Register
     {
 
         public static void SkapaKonto()
