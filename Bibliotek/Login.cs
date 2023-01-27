@@ -26,6 +26,7 @@ namespace Bibliotek
             string[] Användarnamncheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt");
             string[] bilbiotikariecheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt");
 
+            string val = Console.ReadLine();
 
             foreach (string line in Användarnamncheck)
             {
@@ -40,8 +41,7 @@ namespace Bibliotek
                     var användarnamn1 = spliting[0];
                     var lösenord1 = spliting[1];
 
-                    string val = Console.ReadLine();
-
+                    
                     if (val == "1")
                     {
                         Console.WriteLine("Vänligen skriv in ditt användarnamn");
@@ -52,8 +52,10 @@ namespace Bibliotek
                         if (bibliotikarienamn == användarnamn && bibliotikarielösenord == lösenord)
                         {
                             homepage.Hemsida();
+                            return;
                         }
                     }
+
                     if (val == "2")
                     {
                         Console.WriteLine("Vänligen skriv in ditt användarnamn");
@@ -64,8 +66,11 @@ namespace Bibliotek
                         if (användarnamn1 == användarnamn && lösenord1 == lösenord)
                         {
                             homepage.Hemsida();
+                            return;
                         }
                     }
+
+
                 }
                
 
