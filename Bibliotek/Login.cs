@@ -54,6 +54,7 @@ namespace Bibliotek
                             homepage.Hemsida();
                             return;
                         }
+                        LoggaIn();
                     }
 
                     if (val == "2")
@@ -65,9 +66,10 @@ namespace Bibliotek
 
                         if (användarnamn1 == användarnamn && lösenord1 == lösenord)
                         {
-                            homepage.Hemsida();
+                            homepage.Användarhemsida();
                             return;
                         }
+                        LoggaIn();
                     }
 
 

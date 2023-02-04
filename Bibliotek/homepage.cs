@@ -56,6 +56,7 @@ namespace Bibliotek
             if (val == "1")
             {
                 //låna bok
+                Lånabok.Låna();
             }
             if (val == "2")
             {
