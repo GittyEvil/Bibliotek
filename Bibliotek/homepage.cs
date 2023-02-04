@@ -17,12 +17,14 @@ namespace Bibliotek
             Console.WriteLine("2, reservera bok?");
             Console.WriteLine("3, lämna tillbaka en bok?");
             Console.WriteLine("4,byta lösenord?");
+            Console.WriteLine("5, lägga till bok");
 
             string val = Console.ReadLine();
 
             if (val == "1")
             {
                 //låna bok
+                Lånabok.Låna();
             }
             if (val == "2")
             {
@@ -35,6 +37,11 @@ namespace Bibliotek
             if (val == "4")
             {
                 //byta lösenord
+            }
+            if(val == "5")
+            {
+                //lägga till bok
+                Addbook.Läggatillbok();
             }
 
 
