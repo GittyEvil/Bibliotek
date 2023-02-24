@@ -41,7 +41,7 @@ namespace Bibliotek
             if(val == "5")
             {
                 //lägga till bok
-                Addbook.Läggatillbok();
+                handlebook.Addbok();
             }
 
 

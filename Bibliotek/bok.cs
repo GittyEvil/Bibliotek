@@ -5,29 +5,22 @@ namespace Bibliotek
 {
     public class Bok
     {
-        string titel;
-        int serienummer;
-        int antal;
-        string författare;
+        public string Titel {get; set;}
+        public int Serienummer { get; set; }
+        public int Antal { get; set; }
+        public string Författare { get; set; }
 
-        public Bok(string titel, int serienummer, int antal, string författare)
+        public bool Ledig { get; set; }
+
+        public Bok(string bokTitel, int bokAntal, int bokSerienummer, string bokFörfattare, bool bokLedig = true)
         {
-            this.titel = titel;
-            this.serienummer = serienummer;
-            this.antal = antal;
-            this.författare = författare;
+            this.Titel = bokTitel;
+            this.Antal = bokAntal;
+            this.Serienummer = bokSerienummer;
+            this.Författare = bokFörfattare;
+            this.Ledig = bokLedig;
         }
 
-        public Bok(string? titel, string? antal1, string serienummer1, string? författare)
-        {
-            this.titel = titel;
-            Antal = antal1;
-            Serienummer = serienummer1;
-            this.författare = författare;
-        }
-
-        public string? Antal { get; }
-        public string Serienummer { get; }
     }
 
 }

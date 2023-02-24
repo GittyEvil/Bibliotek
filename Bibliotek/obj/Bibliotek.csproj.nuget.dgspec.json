@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adria\\Documents\\bibliotek\\Bibliotek\\Bibliotek.csproj": {}
+    "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Bibliotek.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adria\\Documents\\bibliotek\\Bibliotek\\Bibliotek.csproj": {
+    "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Bibliotek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adria\\Documents\\bibliotek\\Bibliotek\\Bibliotek.csproj",
+        "projectUniqueName": "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Bibliotek.csproj",
         "projectName": "Bibliotek",
-        "projectPath": "C:\\Users\\adria\\Documents\\bibliotek\\Bibliotek\\Bibliotek.csproj",
-        "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adria\\Documents\\bibliotek\\Bibliotek\\obj\\",
+        "projectPath": "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Bibliotek.csproj",
+        "packagesPath": "C:\\Users\\adrian.stude\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrian.stude\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
