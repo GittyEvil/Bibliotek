@@ -13,3 +13,5 @@ C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\ne
 C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.pdb
 C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.genruntimeconfig.cache
 C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\ref\Bibliotek.dll
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\adrian.stude\Documents\Prog2\Bibliotek\bibliotek\Bibliotek\obj\Debug\net6.0\Bibliotek.csproj.CopyComplete

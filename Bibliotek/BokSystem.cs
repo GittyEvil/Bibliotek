@@ -4,6 +4,9 @@ using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
+
 
 namespace Bibliotek
 {
@@ -44,7 +47,7 @@ namespace Bibliotek
             return instance;
         }
 
-        public List<Bok> Getbooks(string val)
+        public List<Bok> Hittabooks(string val)
         {
             var sökning = new List<Bok>();
             var tillgänglig = false;
@@ -77,20 +80,19 @@ namespace Bibliotek
         }
         void LoadBooks()
         {
-            string[] bokFromDb = File.ReadAllLines(booksFilePath);
+            string Data = File.ReadAllText("C: \\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\bibliotek\\Bibliotek\böcker.json");
+            dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data);
 
-            for (var i = 0; i < bokFromDb.Length; i++)
+            foreach (var i in booksData)
             {
-                string bokStr = bokFromDb[i];
-                string[] bokLineTokens = bokStr.Split(" ");
-                string bokTitel = bokLineTokens[0];
-                int bokSerienummer = Int32.Parse(bokLineTokens[1]);
-                int bokAntal = Int32.Parse(bokLineTokens[3]);
-                string bokFörfattare = bokLineTokens[2];
-
-                Bok bok = new Bok(bokTitel, bokSerienummer, bokAntal, bokFörfattare);
+                Bok bok = new Bok((string)i.bokTitel, (int)i.bokSerienummer, (int)i.bokAntal, (string)i.bokFörfattare);
                 books.Add(bok);
+
+               
             }
         }
+
+
+
     }
 }

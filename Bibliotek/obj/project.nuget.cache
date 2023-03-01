@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xSvzCXADboqRbFRR7pY2Ywbbff0X35eM0iJenC2onmaZmzGCBfWaj9ANiOkvNibe12jk/SDw8KzV6PvG5RoslQ==",
+  "dgSpecHash": "nXdzheOPxqk6fLvkUhDOZbSZP4jOHzrQF60hv6QEquWV8Jtyx7kgJmxmRXoF9c/u6FZdirh/WgfaAon6MvMolg==",
   "success": true,
   "projectFilePath": "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Bibliotek.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\adrian.stude\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -51,7 +51,7 @@ namespace Bibliotek
             Console.WriteLine("Vad vill du söka efter?, du kan söka med titel, författare eller seriernummer?");
             string val = Console.ReadLine();
 
-            var sökning = BokSystem.Getbooks(val);
+            var sökning = BokSystem.Hittabooks(val);
 
             for(var i =0; i < sökning.Count; i++)
             {

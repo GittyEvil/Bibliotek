@@ -7,6 +7,7 @@ namespace Bibliotek
         //imports så jag kan använda class person och bok
         public static Person GetPerson = new Person("fem","er",1);
         public static Bok GetBok = new Bok("sluta",14,2,"ja");
+        static BokSystem system = BokSystem.GetInstance();
 
         bool admin = false;
         //main metoden
