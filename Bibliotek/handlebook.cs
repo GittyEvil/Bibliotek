@@ -17,9 +17,9 @@ namespace Bibliotek
             Console.WriteLine("vem är författaren");
             string författare = Console.ReadLine();
             Console.WriteLine("vad är serienumret?");
-            int serienummer = int.Parse(Console.ReadLine());
+            var serienummer = (Console.ReadLine());
             Console.WriteLine("Hur många av boken vill du beställa?");
-            int antal = int.Parse(Console.ReadLine());
+            var antal = (Console.ReadLine());
 
             Bok nybok = new Bok(titel, antal, serienummer, författare);
             BokSystem.AddBok(nybok);

@@ -6,10 +6,10 @@ namespace Bibliotek
     {
         //imports så jag kan använda class person och bok
         public static Person GetPerson = new Person("fem","er",1);
-        public static Bok GetBok = new Bok("sluta",14,2,"ja");
+        public static Bok GetBok = new Bok("sluta","1","s","ja");
         static BokSystem system = BokSystem.GetInstance();
 
-        bool admin = false;
+        //bool admin = false;
         //main metoden
         static void Main(string[] args)
         {
@@ -21,11 +21,11 @@ namespace Bibliotek
         //class för användaren
         public class Användare : Person
         {
-            bool admin = false;
+            //bool admin = false;
 
             public Användare(string förnamn, string efternamn, int personnummer) : base(förnamn, efternamn, personnummer)
             {
-                admin = false;
+                //admin = false;
             }
 
             void inlogg()
@@ -38,12 +38,12 @@ namespace Bibliotek
         public class Bibliotikarie: Person
         {
 
-            bool admin = true;
-            int adminkod = 12455;
+            //bool admin = true;
+            //int adminkod = 12455;
 
             public Bibliotikarie(string förnamn, string efternamn, int personnummer) : base(förnamn, efternamn, personnummer)
             {
-                admin = true;
+                //admin = true;
             }
 
             void inlogg()

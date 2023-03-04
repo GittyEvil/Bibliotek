@@ -80,12 +80,12 @@ namespace Bibliotek
         }
         void LoadBooks()
         {
-            string Data = File.ReadAllText("C: \\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\bibliotek\\Bibliotek\böcker.json");
+            string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
             dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data);
 
             foreach (var i in booksData)
             {
-                Bok bok = new Bok((string)i.bokTitel, (int)i.bokSerienummer, (int)i.bokAntal, (string)i.bokFörfattare);
+                Bok bok = new Bok((string)i.bokTitel, (string)i.bokSerienummer, (string)i.bokAntal, (string)i.bokFörfattare);
                 books.Add(bok);
 
                

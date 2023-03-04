@@ -1,6 +1,4 @@
-﻿[
-  {
-    "författare": "Chinua Achebe",
+﻿    "författare": "Chinua Achebe",
     "country": "Nigeria",
     "imageLink": "images/things-fall-apart.jpg",
     "language": "English",
@@ -8,8 +6,7 @@
     "antal": 209,
     "titel": "Things Fall Apart",
     "year": 1958
-  },
-  {
+
     "författare": "Hans Christian Andersen",
     "country": "Denmark",
     "imageLink": "images/fairy-tales.jpg",
@@ -18,8 +15,7 @@
     "antal": 784,
     "titel": "Fairy tales",
     "year": 1836
-  },
-  {
+
     "författare": "Dante Alighieri",
     "country": "Italy",
     "imageLink": "images/the-divine-comedy.jpg",
@@ -28,8 +24,7 @@
     "antal": 928,
     "titel": "The Divine Comedy",
     "year": 1315
-  },
-  {
+
     "författare": "Unknown",
     "country": "Sumer and Akkadian Empire",
     "imageLink": "images/the-epic-of-gilgamesh.jpg",
@@ -38,8 +33,7 @@
     "antal": 160,
     "titel": "The Epic Of Gilgamesh",
     "year": -1700
-  },
-  {
+
     "författare": "Unknown",
     "country": "Achaemenid Empire",
     "imageLink": "images/the-book-of-job.jpg",
@@ -48,8 +42,7 @@
     "antal": 176,
     "titel": "The Book Of Job",
     "year": -600
-  },
-  {
+ 
     "författare": "Unknown",
     "country": "India/Iran/Iraq/Egypt/Tajikistan",
     "imageLink": "images/one-thousand-and-one-nights.jpg",
@@ -58,8 +51,7 @@
     "antal": 288,
     "titel": "One Thousand and One Nights",
     "year": 1200
-  },
-  {
+
     "författare": "Unknown",
     "country": "Iceland",
     "imageLink": "images/njals-saga.jpg",
@@ -68,8 +60,7 @@
     "antal": 384,
     "titel": "Nj\u00e1l's Saga",
     "year": 1350
-  },
-  {
+
     "författare": "Jane Austen",
     "country": "United Kingdom",
     "imageLink": "images/pride-and-prejudice.jpg",
@@ -78,8 +69,7 @@
     "antal": 226,
     "titel": "Pride and Prejudice",
     "year": 1813
-  },
-  {
+
     "författare": "Honor\u00e9 de Balzac",
     "country": "France",
     "imageLink": "images/le-pere-goriot.jpg",
@@ -88,8 +78,7 @@
     "antal": 443,
     "titel": "Le P\u00e8re Goriot",
     "year": 1835
-  },
-  {
+ 
     "författare": "Samuel Beckett",
     "country": "Republic of Ireland",
     "imageLink": "images/molloy-malone-dies-the-unnamable.jpg",
@@ -98,8 +87,7 @@
     "antal": 256,
     "titel": "Molloy, Malone Dies, The Unnamable, the trilogy",
     "year": 1952
-  },
-  {
+
     "författare": "Giovanni Boccaccio",
     "country": "Italy",
     "imageLink": "images/the-decameron.jpg",
@@ -108,8 +96,7 @@
     "antal": 1024,
     "titel": "The Decameron",
     "year": 1351
-  },
-  {
+ 
     "författare": "Jorge Luis Borges",
     "country": "Argentina",
     "imageLink": "images/ficciones.jpg",
@@ -118,8 +105,7 @@
     "antal": 224,
     "titel": "Ficciones",
     "year": 1965
-  },
-  {
+
     "författare": "Emily Bront\u00eb",
     "country": "United Kingdom",
     "imageLink": "images/wuthering-heights.jpg",
@@ -128,8 +114,7 @@
     "antal": 342,
     "titel": "Wuthering Heights",
     "year": 1847
-  },
-  {
+ 
     "författare": "Albert Camus",
     "country": "Algeria, French Empire",
     "imageLink": "images/l-etranger.jpg",
@@ -138,8 +123,7 @@
     "antal": 185,
     "titel": "The Stranger",
     "year": 1942
-  },
-  {
+ 
     "författare": "Paul Celan",
     "country": "Romania, France",
     "imageLink": "images/poems-paul-celan.jpg",
@@ -148,8 +132,7 @@
     "antal": 320,
     "titel": "Poems",
     "year": 1952
-  },
-  {
+  
     "författare": "Louis-Ferdinand C\u00e9line",
     "country": "France",
     "imageLink": "images/voyage-au-bout-de-la-nuit.jpg",
@@ -158,8 +141,7 @@
     "antal": 505,
     "titel": "Journey to the End of the Night",
     "year": 1932
-  },
-  {
+
     "författare": "Miguel de Cervantes",
     "country": "Spain",
     "imageLink": "images/don-quijote-de-la-mancha.jpg",
@@ -168,8 +150,7 @@
     "antal": 1056,
     "titel": "Don Quijote De La Mancha",
     "year": 1610
-  },
-  {
+
     "författare": "Geoffrey Chaucer",
     "country": "England",
     "imageLink": "images/the-canterbury-tales.jpg",
@@ -178,8 +159,7 @@
     "antal": 544,
     "titel": "The Canterbury Tales",
     "year": 1450
-  },
-  {
+
     "författare": "Anton Chekhov",
     "country": "Russia",
     "imageLink": "images/stories-of-anton-chekhov.jpg",
@@ -188,815 +168,3 @@
     "antal": 194,
     "titel": "Stories",
     "year": 1886
-  },
-  {
-    "författare": "Joseph Conrad",
-    "country": "United Kingdom",
-    "imageLink": "images/nostromo.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Nostromo\n",
-    "antal": 320,
-    "titel": "Nostromo",
-    "year": 1904
-  },
-  {
-    "författare": "Charles Dickens",
-    "country": "United Kingdom",
-    "imageLink": "images/great-expectations.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Great_Expectations\n",
-    "antal": 194,
-    "titel": "Great Expectations",
-    "year": 1861
-  },
-  {
-    "författare": "Denis Diderot",
-    "country": "France",
-    "imageLink": "images/jacques-the-fatalist.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
-    "antal": 596,
-    "titel": "Jacques the Fatalist",
-    "year": 1796
-  },
-  {
-    "författare": "Alfred D\u00f6blin",
-    "country": "Germany",
-    "imageLink": "images/berlin-alexanderplatz.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz\n",
-    "antal": 600,
-    "titel": "Berlin Alexanderplatz",
-    "year": 1929
-  },
-  {
-    "författare": "Fyodor Dostoevsky",
-    "country": "Russia",
-    "imageLink": "images/crime-and-punishment.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment\n",
-    "antal": 551,
-    "titel": "Crime and Punishment",
-    "year": 1866
-  },
-  {
-    "författare": "Fyodor Dostoevsky",
-    "country": "Russia",
-    "imageLink": "images/the-idiot.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/The_Idiot\n",
-    "antal": 656,
-    "titel": "The Idiot",
-    "year": 1869
-  },
-  {
-    "författare": "Fyodor Dostoevsky",
-    "country": "Russia",
-    "imageLink": "images/the-possessed.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)\n",
-    "antal": 768,
-    "titel": "The Possessed",
-    "year": 1872
-  },
-  {
-    "författare": "Fyodor Dostoevsky",
-    "country": "Russia",
-    "imageLink": "images/the-brothers-karamazov.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
-    "antal": 824,
-    "titel": "The Brothers Karamazov",
-    "year": 1880
-  },
-  {
-    "författare": "George Eliot",
-    "country": "United Kingdom",
-    "imageLink": "images/middlemarch.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Middlemarch\n",
-    "antal": 800,
-    "titel": "Middlemarch",
-    "year": 1871
-  },
-  {
-    "författare": "Ralph Ellison",
-    "country": "United States",
-    "imageLink": "images/invisible-man.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Invisible_Man\n",
-    "antal": 581,
-    "titel": "Invisible Man",
-    "year": 1952
-  },
-  {
-    "författare": "Euripides",
-    "country": "Greece",
-    "imageLink": "images/medea.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
-    "antal": 104,
-    "titel": "Medea",
-    "year": -431
-  },
-  {
-    "författare": "William Faulkner",
-    "country": "United States",
-    "imageLink": "images/absalom-absalom.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!\n",
-    "antal": 313,
-    "titel": "Absalom, Absalom!",
-    "year": 1936
-  },
-  {
-    "författare": "William Faulkner",
-    "country": "United States",
-    "imageLink": "images/the-sound-and-the-fury.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury\n",
-    "antal": 326,
-    "titel": "The Sound and the Fury",
-    "year": 1929
-  },
-  {
-    "författare": "Gustave Flaubert",
-    "country": "France",
-    "imageLink": "images/madame-bovary.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Madame_Bovary\n",
-    "antal": 528,
-    "titel": "Madame Bovary",
-    "year": 1857
-  },
-  {
-    "författare": "Gustave Flaubert",
-    "country": "France",
-    "imageLink": "images/l-education-sentimentale.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Sentimental_Education\n",
-    "antal": 606,
-    "titel": "Sentimental Education",
-    "year": 1869
-  },
-  {
-    "författare": "Federico Garc\u00eda Lorca",
-    "country": "Spain",
-    "imageLink": "images/gypsy-ballads.jpg",
-    "language": "Spanish",
-    "link": "https://en.wikipedia.org/wiki/Gypsy_Ballads\n",
-    "antal": 218,
-    "titel": "Gypsy Ballads",
-    "year": 1928
-  },
-  {
-    "författare": "Gabriel Garc\u00eda M\u00e1rquez",
-    "country": "Colombia",
-    "imageLink": "images/one-hundred-years-of-solitude.jpg",
-    "language": "Spanish",
-    "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n",
-    "antal": 417,
-    "titel": "One Hundred Years of Solitude",
-    "year": 1967
-  },
-  {
-    "författare": "Gabriel Garc\u00eda M\u00e1rquez",
-    "country": "Colombia",
-    "imageLink": "images/love-in-the-time-of-cholera.jpg",
-    "language": "Spanish",
-    "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
-    "antal": 368,
-    "titel": "Love in the Time of Cholera",
-    "year": 1985
-  },
-  {
-    "författare": "Johann Wolfgang von Goethe",
-    "country": "Saxe-Weimar",
-    "imageLink": "images/faust.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust\n",
-    "antal": 158,
-    "titel": "Faust",
-    "year": 1832
-  },
-  {
-    "författare": "Nikolai Gogol",
-    "country": "Russia",
-    "imageLink": "images/dead-souls.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/Dead_Souls\n",
-    "antal": 432,
-    "titel": "Dead Souls",
-    "year": 1842
-  },
-  {
-    "författare": "G\u00fcnter Grass",
-    "country": "Germany",
-    "imageLink": "images/the-tin-drum.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/The_Tin_Drum\n",
-    "antal": 600,
-    "titel": "The Tin Drum",
-    "year": 1959
-  },
-  {
-    "författare": "Jo\u00e3o Guimar\u00e3es Rosa",
-    "country": "Brazil",
-    "imageLink": "images/the-devil-to-pay-in-the-backlands.jpg",
-    "language": "Portuguese",
-    "link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands\n",
-    "antal": 494,
-    "titel": "The Devil to Pay in the Backlands",
-    "year": 1956
-  },
-  {
-    "författare": "Knut Hamsun",
-    "country": "Norway",
-    "imageLink": "images/hunger.jpg",
-    "language": "Norwegian",
-    "link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)\n",
-    "antal": 176,
-    "titel": "Hunger",
-    "year": 1890
-  },
-  {
-    "författare": "Ernest Hemingway",
-    "country": "United States",
-    "imageLink": "images/the-old-man-and-the-sea.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
-    "antal": 128,
-    "titel": "The Old Man and the Sea",
-    "year": 1952
-  },
-  {
-    "författare": "Homer",
-    "country": "Greece",
-    "imageLink": "images/the-iliad-of-homer.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Iliad\n",
-    "antal": 608,
-    "titel": "Iliad",
-    "year": -735
-  },
-  {
-    "författare": "Homer",
-    "country": "Greece",
-    "imageLink": "images/the-odyssey-of-homer.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Odyssey\n",
-    "antal": 374,
-    "titel": "Odyssey",
-    "year": -800
-  },
-  {
-    "författare": "Henrik Ibsen",
-    "country": "Norway",
-    "imageLink": "images/a-Dolls-house.jpg",
-    "language": "Norwegian",
-    "link": "https://en.wikipedia.org/wiki/A_Doll%27s_House\n",
-    "antal": 68,
-    "titel": "A Doll's House",
-    "year": 1879
-  },
-  {
-    "författare": "James Joyce",
-    "country": "Irish Free State",
-    "imageLink": "images/ulysses.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)\n",
-    "antal": 228,
-    "titel": "Ulysses",
-    "year": 1922
-  },
-  {
-    "författare": "Franz Kafka",
-    "country": "Czechoslovakia",
-    "imageLink": "images/stories-of-franz-kafka.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories\n",
-    "antal": 488,
-    "titel": "Stories",
-    "year": 1924
-  },
-  {
-    "författare": "Franz Kafka",
-    "country": "Czechoslovakia",
-    "imageLink": "images/the-trial.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/The_Trial\n",
-    "antal": 160,
-    "titel": "The Trial",
-    "year": 1925
-  },
-  {
-    "författare": "Franz Kafka",
-    "country": "Czechoslovakia",
-    "imageLink": "images/the-castle.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/The_Castle_(novel)\n",
-    "antal": 352,
-    "titel": "The Castle",
-    "year": 1926
-  },
-  {
-    "författare": "K\u0101lid\u0101sa",
-    "country": "India",
-    "imageLink": "images/the-recognition-of-shakuntala.jpg",
-    "language": "Sanskrit",
-    "link": "https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam\n",
-    "antal": 147,
-    "titel": "The recognition of Shakuntala",
-    "year": 150
-  },
-  {
-    "författare": "Yasunari Kawabata",
-    "country": "Japan",
-    "imageLink": "images/the-sound-of-the-mountain.jpg",
-    "language": "Japanese",
-    "link": "https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain\n",
-    "antal": 288,
-    "titel": "The Sound of the Mountain",
-    "year": 1954
-  },
-  {
-    "författare": "Nikos Kazantzakis",
-    "country": "Greece",
-    "imageLink": "images/zorba-the-greek.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Zorba_the_Greek\n",
-    "antal": 368,
-    "titel": "Zorba the Greek",
-    "year": 1946
-  },
-  {
-    "författare": "D. H. Lawrence",
-    "country": "United Kingdom",
-    "imageLink": "images/sons-and-lovers.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Sons_and_Lovers\n",
-    "antal": 432,
-    "titel": "Sons and Lovers",
-    "year": 1913
-  },
-  {
-    "författare": "Halld\u00f3r Laxness",
-    "country": "Iceland",
-    "imageLink": "images/independent-people.jpg",
-    "language": "Icelandic",
-    "link": "https://en.wikipedia.org/wiki/Independent_People\n",
-    "antal": 470,
-    "titel": "Independent People",
-    "year": 1934
-  },
-  {
-    "författare": "Giacomo Leopardi",
-    "country": "Italy",
-    "imageLink": "images/poems-giacomo-leopardi.jpg",
-    "language": "Italian",
-    "link": "\n",
-    "antal": 184,
-    "titel": "Poems",
-    "year": 1818
-  },
-  {
-    "författare": "Doris Lessing",
-    "country": "United Kingdom",
-    "imageLink": "images/the-golden-notebook.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
-    "antal": 688,
-    "titel": "The Golden Notebook",
-    "year": 1962
-  },
-  {
-    "författare": "Astrid Lindgren",
-    "country": "Sweden",
-    "imageLink": "images/pippi-longstocking.jpg",
-    "language": "Swedish",
-    "link": "https://en.wikipedia.org/wiki/Pippi_Longstocking\n",
-    "antal": 160,
-    "titel": "Pippi Longstocking",
-    "year": 1945
-  },
-  {
-    "författare": "Lu Xun",
-    "country": "China",
-    "imageLink": "images/diary-of-a-madman.jpg",
-    "language": "Chinese",
-    "link": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary\n",
-    "antal": 389,
-    "titel": "Diary of a Madman",
-    "year": 1918
-  },
-  {
-    "författare": "Naguib Mahfouz",
-    "country": "Egypt",
-    "imageLink": "images/children-of-gebelawi.jpg",
-    "language": "Arabic",
-    "link": "https://en.wikipedia.org/wiki/Children_of_Gebelawi\n",
-    "antal": 355,
-    "titel": "Children of Gebelawi",
-    "year": 1959
-  },
-  {
-    "författare": "Thomas Mann",
-    "country": "Germany",
-    "imageLink": "images/buddenbrooks.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/Buddenbrooks\n",
-    "antal": 736,
-    "titel": "Buddenbrooks",
-    "year": 1901
-  },
-  {
-    "författare": "Thomas Mann",
-    "country": "Germany",
-    "imageLink": "images/the-magic-mountain.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/The_Magic_Mountain\n",
-    "antal": 720,
-    "titel": "The Magic Mountain",
-    "year": 1924
-  },
-  {
-    "författare": "Herman Melville",
-    "country": "United States",
-    "imageLink": "images/moby-dick.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Moby-Dick\n",
-    "antal": 378,
-    "titel": "Moby Dick",
-    "year": 1851
-  },
-  {
-    "författare": "Michel de Montaigne",
-    "country": "France",
-    "imageLink": "images/essais.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Essays_(Montaigne)\n",
-    "antal": 404,
-    "titel": "Essays",
-    "year": 1595
-  },
-  {
-    "författare": "Elsa Morante",
-    "country": "Italy",
-    "imageLink": "images/history.jpg",
-    "language": "Italian",
-    "link": "https://en.wikipedia.org/wiki/History_(novel)\n",
-    "antal": 600,
-    "titel": "History",
-    "year": 1974
-  },
-  {
-    "författare": "Toni Morrison",
-    "country": "United States",
-    "imageLink": "images/beloved.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Beloved_(novel)\n",
-    "antal": 321,
-    "titel": "Beloved",
-    "year": 1987
-  },
-  {
-    "författare": "Murasaki Shikibu",
-    "country": "Japan",
-    "imageLink": "images/the-tale-of-genji.jpg",
-    "language": "Japanese",
-    "link": "https://en.wikipedia.org/wiki/The_Tale_of_Genji\n",
-    "antal": 1360,
-    "titel": "The Tale of Genji",
-    "year": 1006
-  },
-  {
-    "författare": "Robert Musil",
-    "country": "Austria",
-    "imageLink": "images/the-man-without-qualities.jpg",
-    "language": "German",
-    "link": "https://en.wikipedia.org/wiki/The_Man_Without_Qualities\n",
-    "antal": 365,
-    "titel": "The Man Without Qualities",
-    "year": 1931
-  },
-  {
-    "författare": "Vladimir Nabokov",
-    "country": "Russia/United States",
-    "imageLink": "images/lolita.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Lolita\n",
-    "antal": 317,
-    "titel": "Lolita",
-    "year": 1955
-  },
-  {
-    "författare": "George Orwell",
-    "country": "United Kingdom",
-    "imageLink": "images/nineteen-eighty-four.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four\n",
-    "antal": 272,
-    "titel": "Nineteen Eighty-Four",
-    "year": 1949
-  },
-  {
-    "författare": "Ovid",
-    "country": "Roman Empire",
-    "imageLink": "images/the-metamorphoses-of-ovid.jpg",
-    "language": "Classical Latin",
-    "link": "https://en.wikipedia.org/wiki/Metamorphoses\n",
-    "antal": 576,
-    "titel": "Metamorphoses",
-    "year": 100
-  },
-  {
-    "författare": "Fernando Pessoa",
-    "country": "Portugal",
-    "imageLink": "images/the-book-of-disquiet.jpg",
-    "language": "Portuguese",
-    "link": "https://en.wikipedia.org/wiki/The_Book_of_Disquiet\n",
-    "antal": 272,
-    "titel": "The Book of Disquiet",
-    "year": 1928
-  },
-  {
-    "författare": "Edgar Allan Poe",
-    "country": "United States",
-    "imageLink": "images/tales-and-poems-of-edgar-allan-poe.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales\n",
-    "antal": 842,
-    "titel": "Tales",
-    "year": 1950
-  },
-  {
-    "författare": "Marcel Proust",
-    "country": "France",
-    "imageLink": "images/a-la-recherche-du-temps-perdu.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time\n",
-    "antal": 2408,
-    "titel": "In Search of Lost Time",
-    "year": 1920
-  },
-  {
-    "författare": "Fran\u00e7ois Rabelais",
-    "country": "France",
-    "imageLink": "images/gargantua-and-pantagruel.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel\n",
-    "antal": 623,
-    "titel": "Gargantua and Pantagruel",
-    "year": 1533
-  },
-  {
-    "författare": "Juan Rulfo",
-    "country": "Mexico",
-    "imageLink": "images/pedro-paramo.jpg",
-    "language": "Spanish",
-    "link": "https://en.wikipedia.org/wiki/Pedro_P%C3%A1ramo\n",
-    "antal": 124,
-    "titel": "Pedro P\u00e1ramo",
-    "year": 1955
-  },
-  {
-    "författare": "Rumi",
-    "country": "Sultanate of Rum",
-    "imageLink": "images/the-masnavi.jpg",
-    "language": "Persian",
-    "link": "https://en.wikipedia.org/wiki/Masnavi\n",
-    "antal": 438,
-    "titel": "The Masnavi",
-    "year": 1236
-  },
-  {
-    "författare": "Salman Rushdie",
-    "country": "United Kingdom, India",
-    "imageLink": "images/midnights-children.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Midnight%27s_Children\n",
-    "antal": 536,
-    "titel": "Midnight's Children",
-    "year": 1981
-  },
-  {
-    "författare": "Saadi",
-    "country": "Persia, Persian Empire",
-    "imageLink": "images/bostan.jpg",
-    "language": "Persian",
-    "link": "https://en.wikipedia.org/wiki/Bustan_(book)\n",
-    "antal": 298,
-    "titel": "Bostan",
-    "year": 1257
-  },
-  {
-    "författare": "Tayeb Salih",
-    "country": "Sudan",
-    "imageLink": "images/season-of-migration-to-the-north.jpg",
-    "language": "Arabic",
-    "link": "https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North\n",
-    "antal": 139,
-    "titel": "Season of Migration to the North",
-    "year": 1966
-  },
-  {
-    "författare": "Jos\u00e9 Saramago",
-    "country": "Portugal",
-    "imageLink": "images/blindness.jpg",
-    "language": "Portuguese",
-    "link": "https://en.wikipedia.org/wiki/Blindness_(novel)\n",
-    "antal": 352,
-    "titel": "Blindness",
-    "year": 1995
-  },
-  {
-    "författare": "William Shakespeare",
-    "country": "England",
-    "imageLink": "images/hamlet.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Hamlet\n",
-    "antal": 432,
-    "titel": "Hamlet",
-    "year": 1603
-  },
-  {
-    "författare": "William Shakespeare",
-    "country": "England",
-    "imageLink": "images/king-lear.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/King_Lear\n",
-    "antal": 384,
-    "titel": "King Lear",
-    "year": 1608
-  },
-  {
-    "författare": "William Shakespeare",
-    "country": "England",
-    "imageLink": "images/othello.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Othello\n",
-    "antal": 314,
-    "titel": "Othello",
-    "year": 1609
-  },
-  {
-    "författare": "Sophocles",
-    "country": "Greece",
-    "imageLink": "images/oedipus-the-king.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Oedipus_the_King\n",
-    "antal": 88,
-    "titel": "Oedipus the King",
-    "year": -430
-  },
-  {
-    "författare": "Stendhal",
-    "country": "France",
-    "imageLink": "images/le-rouge-et-le-noir.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/The_Red_and_the_Black\n",
-    "antal": 576,
-    "titel": "The Red and the Black",
-    "year": 1830
-  },
-  {
-    "författare": "Laurence Sterne",
-    "country": "England",
-    "imageLink": "images/the-life-and-opinions-of-tristram-shandy.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman\n",
-    "antal": 640,
-    "titel": "The Life And Opinions of Tristram Shandy",
-    "year": 1760
-  },
-  {
-    "författare": "Italo Svevo",
-    "country": "Italy",
-    "imageLink": "images/confessions-of-zeno.jpg",
-    "language": "Italian",
-    "link": "https://en.wikipedia.org/wiki/Zeno%27s_Conscience\n",
-    "antal": 412,
-    "titel": "Confessions of Zeno",
-    "year": 1923
-  },
-  {
-    "författare": "Jonathan Swift",
-    "country": "Ireland",
-    "imageLink": "images/gullivers-travels.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Gulliver%27s_Travels\n",
-    "antal": 178,
-    "titel": "Gulliver's Travels",
-    "year": 1726
-  },
-  {
-    "författare": "Leo Tolstoy",
-    "country": "Russia",
-    "imageLink": "images/war-and-peace.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/War_and_Peace\n",
-    "antal": 1296,
-    "titel": "War and Peace",
-    "year": 1867
-  },
-  {
-    "författare": "Leo Tolstoy",
-    "country": "Russia",
-    "imageLink": "images/anna-karenina.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
-    "antal": 864,
-    "titel": "Anna Karenina",
-    "year": 1877
-  },
-  {
-    "författare": "Leo Tolstoy",
-    "country": "Russia",
-    "imageLink": "images/the-death-of-ivan-ilyich.jpg",
-    "language": "Russian",
-    "link": "https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich\n",
-    "antal": 92,
-    "titel": "The Death of Ivan Ilyich",
-    "year": 1886
-  },
-  {
-    "författare": "Mark Twain",
-    "country": "United States",
-    "imageLink": "images/the-adventures-of-huckleberry-finn.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn\n",
-    "antal": 224,
-    "titel": "The Adventures of Huckleberry Finn",
-    "year": 1884
-  },
-  {
-    "författare": "Valmiki",
-    "country": "India",
-    "imageLink": "images/ramayana.jpg",
-    "language": "Sanskrit",
-    "link": "https://en.wikipedia.org/wiki/Ramayana\n",
-    "antal": 152,
-    "titel": "Ramayana",
-    "year": -450
-  },
-  {
-    "författare": "Virgil",
-    "country": "Roman Empire",
-    "imageLink": "images/the-aeneid.jpg",
-    "language": "Classical Latin",
-    "link": "https://en.wikipedia.org/wiki/Aeneid\n",
-    "antal": 442,
-    "titel": "The Aeneid",
-    "year": -23
-  },
-  {
-    "författare": "Vyasa",
-    "country": "India",
-    "imageLink": "images/the-mahab-harata.jpg",
-    "language": "Sanskrit",
-    "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
-    "antal": 276,
-    "titel": "Mahabharata",
-    "year": -700
-  },
-  {
-    "författare": "Walt Whitman",
-    "country": "United States",
-    "imageLink": "images/leaves-of-grass.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass\n",
-    "antal": 152,
-    "titel": "Leaves of Grass",
-    "year": 1855
-  },
-  {
-    "författare": "Virginia Woolf",
-    "country": "United Kingdom",
-    "imageLink": "images/mrs-dalloway.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway\n",
-    "antal": 216,
-    "titel": "Mrs Dalloway",
-    "year": 1925
-  },
-  {
-    "författare": "Virginia Woolf",
-    "country": "United Kingdom",
-    "imageLink": "images/to-the-lighthouse.jpg",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/To_the_Lighthouse\n",
-    "antal": 209,
-    "titel": "To the Lighthouse",
-    "year": 1927
-  },
-  {
-    "författare": "Marguerite Yourcenar",
-    "country": "France/Belgium",
-    "imageLink": "images/memoirs-of-hadrian.jpg",
-    "language": "French",
-    "link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian\n",
-    "antal": 408,
-    "titel": "Memoirs of Hadrian",
-    "year": 1951
-  }
-]
