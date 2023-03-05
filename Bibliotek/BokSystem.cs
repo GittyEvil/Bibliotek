@@ -50,10 +50,13 @@ namespace Bibliotek
         public List<Bok> Hittabooks(string val)
         {
             var sökning = new List<Bok>();
-            var tillgänglig = false;
+            
             foreach(var bok in books)
             {
-                if(bok.Titel.ToLower().Contains(val.ToLower()))
+
+                var tillgänglig = false;
+
+                if (bok.Titel.ToLower().Contains(val.ToLower()))
                 {
                     tillgänglig = true;
                 }

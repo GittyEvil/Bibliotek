@@ -13,13 +13,13 @@ namespace Bibliotek
         public static void Addbokpage()
         {
             Console.WriteLine("Vad är titeln för boken");
-            string titel = Console.ReadLine();
-            Console.WriteLine("vem är författaren");
-            string författare = Console.ReadLine();
+            string titel = Console.ReadLine()!;
+            Console.WriteLine("vem heter författaren");
+            string författare = Console.ReadLine()!;
             Console.WriteLine("vad är serienumret?");
-            var serienummer = (Console.ReadLine());
+            int serienummer = Int32.Parse((Console.ReadLine()));
             Console.WriteLine("Hur många av boken vill du beställa?");
-            var antal = (Console.ReadLine());
+            int antal = Int32.Parse((Console.ReadLine()));
 
             Bok nybok = new Bok(titel, antal, serienummer, författare);
             BokSystem.AddBok(nybok);
