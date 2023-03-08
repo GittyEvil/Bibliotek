@@ -17,9 +17,9 @@ namespace Bibliotek
             Console.WriteLine("vem heter författaren");
             string författare = Console.ReadLine()!;
             Console.WriteLine("vad är serienumret?");
-            int serienummer = Int32.Parse((Console.ReadLine()));
+            int serienummer = Int32.Parse((Console.ReadLine()!));
             Console.WriteLine("Hur många av boken vill du beställa?");
-            int antal = Int32.Parse((Console.ReadLine()));
+            int antal = Int32.Parse((Console.ReadLine()!));
 
             Bok nybok = new Bok(titel, antal, serienummer, författare);
             BokSystem.AddBok(nybok);
@@ -49,7 +49,7 @@ namespace Bibliotek
         {
 
             Console.WriteLine("Vad vill du söka efter?, du kan söka med titel, författare eller seriernummer?");
-            string val = Console.ReadLine();
+            string val = Console.ReadLine()!;
 
             var sökning = BokSystem.Hittabooks(val);
 

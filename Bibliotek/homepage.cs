@@ -23,8 +23,8 @@ namespace Bibliotek
 
             if (val == "1")
             {
-                //låna bok
-                
+                handlebook.Sökaböcker();
+
             }
             if (val == "2")
             {
@@ -40,8 +40,12 @@ namespace Bibliotek
             }
             if(val == "5")
             {
-                //lägga till bok
+                handlebook.Addbokpage();
                 
+            }
+            if(val == "6")
+            {
+                handlebook.Listaböcker();
             }
 
 

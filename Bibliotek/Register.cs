@@ -26,7 +26,7 @@ namespace Bibliotek
             string val = Console.ReadLine();
             if (val == "1")
             {
-                Console.WriteLine("skriv användarnamn:");
+                Console.WriteLine("skriv personnummer:");
                 string användarnamn1 = Console.ReadLine();
                 Console.WriteLine("skriv ett lösenord");
                 Console.ReadLine();
@@ -43,7 +43,7 @@ namespace Bibliotek
 
             if (val == "2")
             {
-                Console.WriteLine("skriv användarnamn:");
+                Console.WriteLine("skriv personnummer:");
                 string användarnamn = Console.ReadLine();
                 Console.WriteLine("skriv ett lösenord");
                 string lösenord = Console.ReadLine();
