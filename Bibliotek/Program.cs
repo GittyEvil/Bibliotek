@@ -23,7 +23,7 @@ namespace Bibliotek
         {
             //bool admin = false;
 
-            public Användare(string förnamn, string efternamn, int personnummer) : base(förnamn, efternamn, personnummer)
+            public Användare(string förnamn, string lösenord, int personnummer) : base(förnamn, lösenord, personnummer)
             {
                 //admin = false;
             }
@@ -41,7 +41,7 @@ namespace Bibliotek
             //bool admin = true;
             //int adminkod = 12455;
 
-            public Bibliotikarie(string förnamn, string efternamn, int personnummer) : base(förnamn, efternamn, personnummer)
+            public Bibliotikarie(string förnamn, string lösenord, int personnummer) : base(förnamn, lösenord, personnummer)
             {
                 //admin = true;
             }

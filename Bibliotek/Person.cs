@@ -4,14 +4,14 @@ namespace Bibliotek
 {
     public class Person
     {
-        string förnamn;
-        string efternamn;
-        int personnummer;
+        public string förnamn;
+        public string lösenord;
+        public int personnummer;
 
         public Person(string förnamn, string efternamn, int personnummer)
         {
             this.förnamn = förnamn;
-            this.efternamn = efternamn;
+            this.lösenord = efternamn;
             this.personnummer = personnummer;
         }
     }

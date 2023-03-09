@@ -6,8 +6,8 @@ namespace Bibliotek
     public class Bok
     {
         public string? Titel {get; set;}
-        public int Serienummer { get; set; }
-        public int Antal { get; set; }
+        public int? Serienummer { get; set; }
+        public int? Antal { get; set; }
         public string? Författare { get; set; }
         public bool Ledig { get; set; }
 

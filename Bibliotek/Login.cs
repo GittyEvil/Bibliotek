@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
+using static System.Net.Mime.MediaTypeNames;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Bibliotek
 {
@@ -25,6 +29,8 @@ namespace Bibliotek
 
             string[] Användarnamncheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt");
             string[] bilbiotikariecheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt");
+            //string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
+            //var userData = JsonSerializer.Deserialize<Person>(Data);
 
             string val = Console.ReadLine();
 
@@ -41,6 +47,10 @@ namespace Bibliotek
                     var användarnamn1 = spliting[0];
                     var lösenord1 = spliting[1];
 
+                    //var username1 = userData.förnamn;
+                    //var password1 = userData.lösenord;
+                    //var personnummer1 =userData.personnummer.ToString();
+
                     
                     if (val == "1")
                     {
@@ -49,11 +59,18 @@ namespace Bibliotek
                         Console.WriteLine("Skriv in ditt lösenord");
                         string lösenord = Console.ReadLine();
 
+
+                        /*if(användarnamn == personnummer1 && lösenord == password1)
+                        {
+                            homepage.Hemsida();
+                        }
+                        */
                         if (bibliotikarienamn == användarnamn && bibliotikarielösenord == lösenord)
                         {
                             homepage.Hemsida();
                             return;
                         }
+                        
                         LoggaIn();
                     }
 

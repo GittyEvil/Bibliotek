@@ -60,7 +60,8 @@ namespace Bibliotek
             Console.WriteLine("1, låna bok?");
             Console.WriteLine("2, reservera bok?");
             Console.WriteLine("3, lämna tillbaka en bok?");
-            Console.WriteLine("4,byta lösenord?");
+            Console.WriteLine("4, byta lösenord?");
+            Console.WriteLine("5, lista böcker");
 
             string val = Console.ReadLine();
 
@@ -79,7 +80,7 @@ namespace Bibliotek
             }
             if (val == "4")
             {
-                //byta lösenord
+                ChangePassword.PasswordChange();
             }
             if (val == "5")
             {
