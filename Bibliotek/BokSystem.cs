@@ -66,7 +66,7 @@ namespace Bibliotek
                     tillgänglig = true;
                 }
 
-                if (bok.Titel.ToLower().Contains(val.ToLower()))
+                if (bok.Titel!.ToLower().Contains(val.ToLower()))
                 {
                     tillgänglig = true;
                 }

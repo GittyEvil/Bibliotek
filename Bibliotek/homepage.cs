@@ -20,11 +20,13 @@ namespace Bibliotek
             Console.WriteLine("5, lägga till bok");
 
             string val = Console.ReadLine();
-
+            if (val == "0")
+            {
+                handlebook.Listaböcker();
+            }
             if (val == "1")
             {
                 handlebook.Sökaböcker();
-
             }
             if (val == "2")
             {
@@ -45,7 +47,7 @@ namespace Bibliotek
             }
             if(val == "6")
             {
-                handlebook.Listaböcker();
+                handlebook.Addbokpage();
             }
 
 
