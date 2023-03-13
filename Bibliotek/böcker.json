@@ -7,7 +7,7 @@
     "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
     "antal": 209,
     "titel": "Things Fall Apart",
-    "year": 1958
+    "serienummer": 1958
   },
   {
     "författare": "Hans Christian Andersen",
@@ -17,7 +17,7 @@
     "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
     "antal": 784,
     "titel": "Fairy tales",
-    "year": 1836
+    "serienummer": 1836
   },
   {
     "författare": "Dante Alighieri",
@@ -27,7 +27,7 @@
     "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
     "antal": 928,
     "titel": "The Divine Comedy",
-    "year": 1315
+    "serienummer": 1315
   },
   {
     "författare": "Unknown",
@@ -37,7 +37,7 @@
     "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
     "antal": 160,
     "titel": "The Epic Of Gilgamesh",
-    "year": -1700
+    "serienummer": -1700
   },
   {
     "författare": "Unknown",
@@ -47,7 +47,7 @@
     "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
     "antal": 176,
     "titel": "The Book Of Job",
-    "year": -600
+    "serienummer": -600
   },
   {
     "författare": "Unknown",
@@ -57,7 +57,7 @@
     "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
     "antal": 288,
     "titel": "One Thousand and One Nights",
-    "year": 1200
+    "serienummer": 1200
   },
   {
     "författare": "Unknown",
@@ -67,7 +67,7 @@
     "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\n",
     "antal": 384,
     "titel": "Nj\u00e1l's Saga",
-    "year": 1350
+    "serienummer": 1350
   },
   {
     "författare": "Jane Austen",
@@ -77,7 +77,7 @@
     "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
     "antal": 226,
     "titel": "Pride and Prejudice",
-    "year": 1813
+    "serienummer": 1813
   },
   {
     "författare": "Honor\u00e9 de Balzac",
@@ -87,7 +87,7 @@
     "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\n",
     "antal": 443,
     "titel": "Le P\u00e8re Goriot",
-    "year": 1835
+    "serienummer": 1835
   },
   {
     "författare": "Samuel Beckett",
@@ -97,7 +97,7 @@
     "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
     "antal": 256,
     "titel": "Molloy, Malone Dies, The Unnamable, the trilogy",
-    "year": 1952
+    "serienummer": 1952
   },
   {
     "författare": "Giovanni Boccaccio",
@@ -107,7 +107,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Decameron\n",
     "antal": 1024,
     "titel": "The Decameron",
-    "year": 1351
+    "serienummer": 1351
   },
   {
     "författare": "Jorge Luis Borges",
@@ -117,7 +117,7 @@
     "link": "https://en.wikipedia.org/wiki/Ficciones\n",
     "antal": 224,
     "titel": "Ficciones",
-    "year": 1965
+    "serienummer": 1965
   },
   {
     "författare": "Emily Bront\u00eb",
@@ -127,7 +127,7 @@
     "link": "https://en.wikipedia.org/wiki/Wuthering_Heights\n",
     "antal": 342,
     "titel": "Wuthering Heights",
-    "year": 1847
+    "serienummer": 1847
   },
   {
     "författare": "Albert Camus",
@@ -137,7 +137,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)\n",
     "antal": 185,
     "titel": "The Stranger",
-    "year": 1942
+    "serienummer": 1942
   },
   {
     "författare": "Paul Celan",
@@ -147,7 +147,7 @@
     "link": "\n",
     "antal": 320,
     "titel": "Poems",
-    "year": 1952
+    "serienummer": 1952
   },
   {
     "författare": "Louis-Ferdinand C\u00e9line",
@@ -157,7 +157,7 @@
     "link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night\n",
     "antal": 505,
     "titel": "Journey to the End of the Night",
-    "year": 1932
+    "serienummer": 1932
   },
   {
     "författare": "Miguel de Cervantes",
@@ -167,7 +167,7 @@
     "link": "https://en.wikipedia.org/wiki/Don_Quixote\n",
     "antal": 1056,
     "titel": "Don Quijote De La Mancha",
-    "year": 1610
+    "serienummer": 1610
   },
   {
     "författare": "Geoffrey Chaucer",
@@ -177,7 +177,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales\n",
     "antal": 544,
     "titel": "The Canterbury Tales",
-    "year": 1450
+    "serienummer": 1450
   },
   {
     "författare": "Anton Chekhov",
@@ -187,7 +187,7 @@
     "link": "https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov\n",
     "antal": 194,
     "titel": "Stories",
-    "year": 1886
+    "serienummer": 1886
   },
   {
     "författare": "Joseph Conrad",
@@ -197,7 +197,7 @@
     "link": "https://en.wikipedia.org/wiki/Nostromo\n",
     "antal": 320,
     "titel": "Nostromo",
-    "year": 1904
+    "serienummer": 1904
   },
   {
     "författare": "Charles Dickens",
@@ -207,7 +207,7 @@
     "link": "https://en.wikipedia.org/wiki/Great_Expectations\n",
     "antal": 194,
     "titel": "Great Expectations",
-    "year": 1861
+    "serienummer": 1861
   },
   {
     "författare": "Denis Diderot",
@@ -217,7 +217,7 @@
     "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
     "antal": 596,
     "titel": "Jacques the Fatalist",
-    "year": 1796
+    "serienummer": 1796
   },
   {
     "författare": "Alfred D\u00f6blin",
@@ -227,7 +227,7 @@
     "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz\n",
     "antal": 600,
     "titel": "Berlin Alexanderplatz",
-    "year": 1929
+    "serienummer": 1929
   },
   {
     "författare": "Fyodor Dostoevsky",
@@ -237,7 +237,7 @@
     "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment\n",
     "antal": 551,
     "titel": "Crime and Punishment",
-    "year": 1866
+    "serienummer": 1866
   },
   {
     "författare": "Fyodor Dostoevsky",
@@ -247,7 +247,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Idiot\n",
     "antal": 656,
     "titel": "The Idiot",
-    "year": 1869
+    "serienummer": 1869
   },
   {
     "författare": "Fyodor Dostoevsky",
@@ -257,7 +257,7 @@
     "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)\n",
     "antal": 768,
     "titel": "The Possessed",
-    "year": 1872
+    "serienummer": 1872
   },
   {
     "författare": "Fyodor Dostoevsky",
@@ -267,7 +267,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
     "antal": 824,
     "titel": "The Brothers Karamazov",
-    "year": 1880
+    "serienummer": 1880
   },
   {
     "författare": "George Eliot",
@@ -277,7 +277,7 @@
     "link": "https://en.wikipedia.org/wiki/Middlemarch\n",
     "antal": 800,
     "titel": "Middlemarch",
-    "year": 1871
+    "serienummer": 1871
   },
   {
     "författare": "Ralph Ellison",
@@ -287,7 +287,7 @@
     "link": "https://en.wikipedia.org/wiki/Invisible_Man\n",
     "antal": 581,
     "titel": "Invisible Man",
-    "year": 1952
+    "serienummer": 1952
   },
   {
     "författare": "Euripides",
@@ -297,7 +297,7 @@
     "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
     "antal": 104,
     "titel": "Medea",
-    "year": -431
+    "serienummer": -431
   },
   {
     "författare": "William Faulkner",
@@ -307,7 +307,7 @@
     "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!\n",
     "antal": 313,
     "titel": "Absalom, Absalom!",
-    "year": 1936
+    "serienummer": 1936
   },
   {
     "författare": "William Faulkner",
@@ -317,7 +317,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury\n",
     "antal": 326,
     "titel": "The Sound and the Fury",
-    "year": 1929
+    "serienummer": 1929
   },
   {
     "författare": "Gustave Flaubert",
@@ -327,7 +327,7 @@
     "link": "https://en.wikipedia.org/wiki/Madame_Bovary\n",
     "antal": 528,
     "titel": "Madame Bovary",
-    "year": 1857
+    "serienummer": 1857
   },
   {
     "författare": "Gustave Flaubert",
@@ -337,7 +337,7 @@
     "link": "https://en.wikipedia.org/wiki/Sentimental_Education\n",
     "antal": 606,
     "titel": "Sentimental Education",
-    "year": 1869
+    "serienummer": 1869
   },
   {
     "författare": "Federico Garc\u00eda Lorca",
@@ -347,17 +347,17 @@
     "link": "https://en.wikipedia.org/wiki/Gypsy_Ballads\n",
     "antal": 218,
     "titel": "Gypsy Ballads",
-    "year": 1928
+    "serienummer": 1928
   },
   {
     "författare": "Gabriel Garc\u00eda M\u00e1rquez",
     "country": "Colombia",
-    "imageLink": "images/one-hundred-years-of-solitude.jpg",
+    "imageLink": "images/one-hundred-serienummers-of-solitude.jpg",
     "language": "Spanish",
-    "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n",
+    "link": "https://en.wikipedia.org/wiki/One_Hundred_serienummers_of_Solitude\n",
     "antal": 417,
-    "titel": "One Hundred Years of Solitude",
-    "year": 1967
+    "titel": "One Hundred serienummers of Solitude",
+    "serienummer": 1967
   },
   {
     "författare": "Gabriel Garc\u00eda M\u00e1rquez",
@@ -367,7 +367,7 @@
     "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
     "antal": 368,
     "titel": "Love in the Time of Cholera",
-    "year": 1985
+    "serienummer": 1985
   },
   {
     "författare": "Johann Wolfgang von Goethe",
@@ -377,7 +377,7 @@
     "link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust\n",
     "antal": 158,
     "titel": "Faust",
-    "year": 1832
+    "serienummer": 1832
   },
   {
     "författare": "Nikolai Gogol",
@@ -387,7 +387,7 @@
     "link": "https://en.wikipedia.org/wiki/Dead_Souls\n",
     "antal": 432,
     "titel": "Dead Souls",
-    "year": 1842
+    "serienummer": 1842
   },
   {
     "författare": "G\u00fcnter Grass",
@@ -397,7 +397,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Tin_Drum\n",
     "antal": 600,
     "titel": "The Tin Drum",
-    "year": 1959
+    "serienummer": 1959
   },
   {
     "författare": "Jo\u00e3o Guimar\u00e3es Rosa",
@@ -407,7 +407,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands\n",
     "antal": 494,
     "titel": "The Devil to Pay in the Backlands",
-    "year": 1956
+    "serienummer": 1956
   },
   {
     "författare": "Knut Hamsun",
@@ -417,7 +417,7 @@
     "link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)\n",
     "antal": 176,
     "titel": "Hunger",
-    "year": 1890
+    "serienummer": 1890
   },
   {
     "författare": "Ernest Hemingway",
@@ -427,7 +427,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
     "antal": 128,
     "titel": "The Old Man and the Sea",
-    "year": 1952
+    "serienummer": 1952
   },
   {
     "författare": "Homer",
@@ -437,7 +437,7 @@
     "link": "https://en.wikipedia.org/wiki/Iliad\n",
     "antal": 608,
     "titel": "Iliad",
-    "year": -735
+    "serienummer": -735
   },
   {
     "författare": "Homer",
@@ -447,7 +447,7 @@
     "link": "https://en.wikipedia.org/wiki/Odyssey\n",
     "antal": 374,
     "titel": "Odyssey",
-    "year": -800
+    "serienummer": -800
   },
   {
     "författare": "Henrik Ibsen",
@@ -457,7 +457,7 @@
     "link": "https://en.wikipedia.org/wiki/A_Doll%27s_House\n",
     "antal": 68,
     "titel": "A Doll's House",
-    "year": 1879
+    "serienummer": 1879
   },
   {
     "författare": "James Joyce",
@@ -467,7 +467,7 @@
     "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)\n",
     "antal": 228,
     "titel": "Ulysses",
-    "year": 1922
+    "serienummer": 1922
   },
   {
     "författare": "Franz Kafka",
@@ -477,7 +477,7 @@
     "link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories\n",
     "antal": 488,
     "titel": "Stories",
-    "year": 1924
+    "serienummer": 1924
   },
   {
     "författare": "Franz Kafka",
@@ -487,7 +487,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Trial\n",
     "antal": 160,
     "titel": "The Trial",
-    "year": 1925
+    "serienummer": 1925
   },
   {
     "författare": "Franz Kafka",
@@ -497,7 +497,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Castle_(novel)\n",
     "antal": 352,
     "titel": "The Castle",
-    "year": 1926
+    "serienummer": 1926
   },
   {
     "författare": "K\u0101lid\u0101sa",
@@ -507,7 +507,7 @@
     "link": "https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam\n",
     "antal": 147,
     "titel": "The recognition of Shakuntala",
-    "year": 150
+    "serienummer": 150
   },
   {
     "författare": "Yasunari Kawabata",
@@ -517,7 +517,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain\n",
     "antal": 288,
     "titel": "The Sound of the Mountain",
-    "year": 1954
+    "serienummer": 1954
   },
   {
     "författare": "Nikos Kazantzakis",
@@ -527,7 +527,7 @@
     "link": "https://en.wikipedia.org/wiki/Zorba_the_Greek\n",
     "antal": 368,
     "titel": "Zorba the Greek",
-    "year": 1946
+    "serienummer": 1946
   },
   {
     "författare": "D. H. Lawrence",
@@ -537,7 +537,7 @@
     "link": "https://en.wikipedia.org/wiki/Sons_and_Lovers\n",
     "antal": 432,
     "titel": "Sons and Lovers",
-    "year": 1913
+    "serienummer": 1913
   },
   {
     "författare": "Halld\u00f3r Laxness",
@@ -547,7 +547,7 @@
     "link": "https://en.wikipedia.org/wiki/Independent_People\n",
     "antal": 470,
     "titel": "Independent People",
-    "year": 1934
+    "serienummer": 1934
   },
   {
     "författare": "Giacomo Leopardi",
@@ -557,7 +557,7 @@
     "link": "\n",
     "antal": 184,
     "titel": "Poems",
-    "year": 1818
+    "serienummer": 1818
   },
   {
     "författare": "Doris Lessing",
@@ -567,7 +567,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
     "antal": 688,
     "titel": "The Golden Notebook",
-    "year": 1962
+    "serienummer": 1962
   },
   {
     "författare": "Astrid Lindgren",
@@ -577,7 +577,7 @@
     "link": "https://en.wikipedia.org/wiki/Pippi_Longstocking\n",
     "antal": 160,
     "titel": "Pippi Longstocking",
-    "year": 1945
+    "serienummer": 1945
   },
   {
     "författare": "Lu Xun",
@@ -587,7 +587,7 @@
     "link": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary\n",
     "antal": 389,
     "titel": "Diary of a Madman",
-    "year": 1918
+    "serienummer": 1918
   },
   {
     "författare": "Naguib Mahfouz",
@@ -597,7 +597,7 @@
     "link": "https://en.wikipedia.org/wiki/Children_of_Gebelawi\n",
     "antal": 355,
     "titel": "Children of Gebelawi",
-    "year": 1959
+    "serienummer": 1959
   },
   {
     "författare": "Thomas Mann",
@@ -607,7 +607,7 @@
     "link": "https://en.wikipedia.org/wiki/Buddenbrooks\n",
     "antal": 736,
     "titel": "Buddenbrooks",
-    "year": 1901
+    "serienummer": 1901
   },
   {
     "författare": "Thomas Mann",
@@ -617,7 +617,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Magic_Mountain\n",
     "antal": 720,
     "titel": "The Magic Mountain",
-    "year": 1924
+    "serienummer": 1924
   },
   {
     "författare": "Herman Melville",
@@ -627,7 +627,7 @@
     "link": "https://en.wikipedia.org/wiki/Moby-Dick\n",
     "antal": 378,
     "titel": "Moby Dick",
-    "year": 1851
+    "serienummer": 1851
   },
   {
     "författare": "Michel de Montaigne",
@@ -637,7 +637,7 @@
     "link": "https://en.wikipedia.org/wiki/Essays_(Montaigne)\n",
     "antal": 404,
     "titel": "Essays",
-    "year": 1595
+    "serienummer": 1595
   },
   {
     "författare": "Elsa Morante",
@@ -647,7 +647,7 @@
     "link": "https://en.wikipedia.org/wiki/History_(novel)\n",
     "antal": 600,
     "titel": "History",
-    "year": 1974
+    "serienummer": 1974
   },
   {
     "författare": "Toni Morrison",
@@ -657,7 +657,7 @@
     "link": "https://en.wikipedia.org/wiki/Beloved_(novel)\n",
     "antal": 321,
     "titel": "Beloved",
-    "year": 1987
+    "serienummer": 1987
   },
   {
     "författare": "Murasaki Shikibu",
@@ -667,7 +667,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Tale_of_Genji\n",
     "antal": 1360,
     "titel": "The Tale of Genji",
-    "year": 1006
+    "serienummer": 1006
   },
   {
     "författare": "Robert Musil",
@@ -677,7 +677,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Man_Without_Qualities\n",
     "antal": 365,
     "titel": "The Man Without Qualities",
-    "year": 1931
+    "serienummer": 1931
   },
   {
     "författare": "Vladimir Nabokov",
@@ -687,7 +687,7 @@
     "link": "https://en.wikipedia.org/wiki/Lolita\n",
     "antal": 317,
     "titel": "Lolita",
-    "year": 1955
+    "serienummer": 1955
   },
   {
     "författare": "George Orwell",
@@ -697,7 +697,7 @@
     "link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four\n",
     "antal": 272,
     "titel": "Nineteen Eighty-Four",
-    "year": 1949
+    "serienummer": 1949
   },
   {
     "författare": "Ovid",
@@ -707,7 +707,7 @@
     "link": "https://en.wikipedia.org/wiki/Metamorphoses\n",
     "antal": 576,
     "titel": "Metamorphoses",
-    "year": 100
+    "serienummer": 100
   },
   {
     "författare": "Fernando Pessoa",
@@ -717,7 +717,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Book_of_Disquiet\n",
     "antal": 272,
     "titel": "The Book of Disquiet",
-    "year": 1928
+    "serienummer": 1928
   },
   {
     "författare": "Edgar Allan Poe",
@@ -727,7 +727,7 @@
     "link": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales\n",
     "antal": 842,
     "titel": "Tales",
-    "year": 1950
+    "serienummer": 1950
   },
   {
     "författare": "Marcel Proust",
@@ -737,7 +737,7 @@
     "link": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time\n",
     "antal": 2408,
     "titel": "In Search of Lost Time",
-    "year": 1920
+    "serienummer": 1920
   },
   {
     "författare": "Fran\u00e7ois Rabelais",
@@ -747,7 +747,7 @@
     "link": "https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel\n",
     "antal": 623,
     "titel": "Gargantua and Pantagruel",
-    "year": 1533
+    "serienummer": 1533
   },
   {
     "författare": "Juan Rulfo",
@@ -757,7 +757,7 @@
     "link": "https://en.wikipedia.org/wiki/Pedro_P%C3%A1ramo\n",
     "antal": 124,
     "titel": "Pedro P\u00e1ramo",
-    "year": 1955
+    "serienummer": 1955
   },
   {
     "författare": "Rumi",
@@ -767,7 +767,7 @@
     "link": "https://en.wikipedia.org/wiki/Masnavi\n",
     "antal": 438,
     "titel": "The Masnavi",
-    "year": 1236
+    "serienummer": 1236
   },
   {
     "författare": "Salman Rushdie",
@@ -777,7 +777,7 @@
     "link": "https://en.wikipedia.org/wiki/Midnight%27s_Children\n",
     "antal": 536,
     "titel": "Midnight's Children",
-    "year": 1981
+    "serienummer": 1981
   },
   {
     "författare": "Saadi",
@@ -787,7 +787,7 @@
     "link": "https://en.wikipedia.org/wiki/Bustan_(book)\n",
     "antal": 298,
     "titel": "Bostan",
-    "year": 1257
+    "serienummer": 1257
   },
   {
     "författare": "Tayeb Salih",
@@ -797,7 +797,7 @@
     "link": "https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North\n",
     "antal": 139,
     "titel": "Season of Migration to the North",
-    "year": 1966
+    "serienummer": 1966
   },
   {
     "författare": "Jos\u00e9 Saramago",
@@ -807,7 +807,7 @@
     "link": "https://en.wikipedia.org/wiki/Blindness_(novel)\n",
     "antal": 352,
     "titel": "Blindness",
-    "year": 1995
+    "serienummer": 1995
   },
   {
     "författare": "William Shakespeare",
@@ -817,7 +817,7 @@
     "link": "https://en.wikipedia.org/wiki/Hamlet\n",
     "antal": 432,
     "titel": "Hamlet",
-    "year": 1603
+    "serienummer": 1603
   },
   {
     "författare": "William Shakespeare",
@@ -827,7 +827,7 @@
     "link": "https://en.wikipedia.org/wiki/King_Lear\n",
     "antal": 384,
     "titel": "King Lear",
-    "year": 1608
+    "serienummer": 1608
   },
   {
     "författare": "William Shakespeare",
@@ -837,7 +837,7 @@
     "link": "https://en.wikipedia.org/wiki/Othello\n",
     "antal": 314,
     "titel": "Othello",
-    "year": 1609
+    "serienummer": 1609
   },
   {
     "författare": "Sophocles",
@@ -847,7 +847,7 @@
     "link": "https://en.wikipedia.org/wiki/Oedipus_the_King\n",
     "antal": 88,
     "titel": "Oedipus the King",
-    "year": -430
+    "serienummer": -430
   },
   {
     "författare": "Stendhal",
@@ -857,7 +857,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Red_and_the_Black\n",
     "antal": 576,
     "titel": "The Red and the Black",
-    "year": 1830
+    "serienummer": 1830
   },
   {
     "författare": "Laurence Sterne",
@@ -867,7 +867,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman\n",
     "antal": 640,
     "titel": "The Life And Opinions of Tristram Shandy",
-    "year": 1760
+    "serienummer": 1760
   },
   {
     "författare": "Italo Svevo",
@@ -877,7 +877,7 @@
     "link": "https://en.wikipedia.org/wiki/Zeno%27s_Conscience\n",
     "antal": 412,
     "titel": "Confessions of Zeno",
-    "year": 1923
+    "serienummer": 1923
   },
   {
     "författare": "Jonathan Swift",
@@ -887,7 +887,7 @@
     "link": "https://en.wikipedia.org/wiki/Gulliver%27s_Travels\n",
     "antal": 178,
     "titel": "Gulliver's Travels",
-    "year": 1726
+    "serienummer": 1726
   },
   {
     "författare": "Leo Tolstoy",
@@ -897,7 +897,7 @@
     "link": "https://en.wikipedia.org/wiki/War_and_Peace\n",
     "antal": 1296,
     "titel": "War and Peace",
-    "year": 1867
+    "serienummer": 1867
   },
   {
     "författare": "Leo Tolstoy",
@@ -907,7 +907,7 @@
     "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
     "antal": 864,
     "titel": "Anna Karenina",
-    "year": 1877
+    "serienummer": 1877
   },
   {
     "författare": "Leo Tolstoy",
@@ -917,7 +917,7 @@
     "link": "https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich\n",
     "antal": 92,
     "titel": "The Death of Ivan Ilyich",
-    "year": 1886
+    "serienummer": 1886
   },
   {
     "författare": "Mark Twain",
@@ -927,7 +927,7 @@
     "link": "https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn\n",
     "antal": 224,
     "titel": "The Adventures of Huckleberry Finn",
-    "year": 1884
+    "serienummer": 1884
   },
   {
     "författare": "Valmiki",
@@ -937,7 +937,7 @@
     "link": "https://en.wikipedia.org/wiki/Ramayana\n",
     "antal": 152,
     "titel": "Ramayana",
-    "year": -450
+    "serienummer": -450
   },
   {
     "författare": "Virgil",
@@ -947,7 +947,7 @@
     "link": "https://en.wikipedia.org/wiki/Aeneid\n",
     "antal": 442,
     "titel": "The Aeneid",
-    "year": -23
+    "serienummer": -23
   },
   {
     "författare": "Vyasa",
@@ -957,7 +957,7 @@
     "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
     "antal": 276,
     "titel": "Mahabharata",
-    "year": -700
+    "serienummer": -700
   },
   {
     "författare": "Walt Whitman",
@@ -967,7 +967,7 @@
     "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass\n",
     "antal": 152,
     "titel": "Leaves of Grass",
-    "year": 1855
+    "serienummer": 1855
   },
   {
     "författare": "Virginia Woolf",
@@ -977,7 +977,7 @@
     "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway\n",
     "antal": 216,
     "titel": "Mrs Dalloway",
-    "year": 1925
+    "serienummer": 1925
   },
   {
     "författare": "Virginia Woolf",
@@ -987,7 +987,7 @@
     "link": "https://en.wikipedia.org/wiki/To_the_Lighthouse\n",
     "antal": 209,
     "titel": "To the Lighthouse",
-    "year": 1927
+    "serienummer": 1927
   },
   {
     "författare": "Marguerite Yourcenar",
@@ -997,6 +997,6 @@
     "link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian\n",
     "antal": 408,
     "titel": "Memoirs of Hadrian",
-    "year": 1951
+    "serienummer": 1951
   }
 ]

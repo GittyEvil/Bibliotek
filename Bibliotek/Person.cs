@@ -5,14 +5,12 @@ namespace Bibliotek
     public class Person
     {
         public string förnamn;
-        public string lösenord;
-        public int personnummer;
+        public string id;
 
-        public Person(string förnamn, string efternamn, int personnummer)
+        public Person(string förnamn, string id)
         {
             this.förnamn = förnamn;
-            this.lösenord = efternamn;
-            this.personnummer = personnummer;
+            this.id = id;
         }
     }
 }

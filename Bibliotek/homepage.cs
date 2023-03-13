@@ -14,15 +14,16 @@ namespace Bibliotek
 
             Console.WriteLine("Vad vill du göra?");
             Console.WriteLine("1, låna bok?");
-            Console.WriteLine("2, reservera bok?");
+            Console.WriteLine("2, söka bok?");
             Console.WriteLine("3, lämna tillbaka en bok?");
             Console.WriteLine("4,byta lösenord?");
-            Console.WriteLine("5, lägga till bok");
+            Console.WriteLine("5, lägga till bok?");
+            Console.WriteLine("6, Lista böcker?");
 
-            string val = Console.ReadLine();
+            string val = Console.ReadLine()!;
             if (val == "0")
             {
-                handlebook.Listaböcker();
+                handlebook.Sökaböcker();
             }
             if (val == "1")
             {
@@ -47,8 +48,9 @@ namespace Bibliotek
             }
             if(val == "6")
             {
-                handlebook.Addbokpage();
+                handlebook.Listaböcker();
             }
+            
 
 
         }
@@ -60,21 +62,22 @@ namespace Bibliotek
 
             Console.WriteLine("Vad vill du göra?");
             Console.WriteLine("1, låna bok?");
-            Console.WriteLine("2, reservera bok?");
+            Console.WriteLine("2, söka bok?");
             Console.WriteLine("3, lämna tillbaka en bok?");
             Console.WriteLine("4, byta lösenord?");
             Console.WriteLine("5, lista böcker");
 
-            string val = Console.ReadLine();
+            string val = Console.ReadLine()!;
 
             if (val == "1")
             {
                 //söka
                 handlebook.Sökaböcker();
+                BokSystem.Lånabok(bok);
             }
             if (val == "2")
             {
-                //reservera
+                handlebook.Sökaböcker();
             }
             if (val == "3")
             {

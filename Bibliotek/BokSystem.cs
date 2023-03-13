@@ -14,7 +14,10 @@ namespace Bibliotek
     {
         private static BokSystem? instance = null;
         private static string booksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Böcker.txt";
+        private static string RentedbooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Lånade_böcker.txt";
         private List<Bok> books = new List<Bok>();
+        private List<string> loanedbooks = new List<string>();
+        private Person loggedInPerson;
 
         public List<Bok> GetBooks() { return books; }
 
@@ -50,8 +53,8 @@ namespace Bibliotek
         public List<Bok> Hittabooks(string val)
         {
             var sökning = new List<Bok>();
-            
-            foreach(var bok in books)
+
+            foreach (var bok in books)
             {
 
                 var tillgänglig = false;
@@ -60,19 +63,19 @@ namespace Bibliotek
                 {
                     tillgänglig = true;
                 }
-                
+
                 if (bok.Författare!.ToLower().Contains(val.ToLower()))
                 {
                     tillgänglig = true;
                 }
-
-                if (bok.Titel!.ToLower().Contains(val.ToLower()))
+                /*
+                if (bok.Serienummer.Contains(val.ToLower()))
                 {
                     tillgänglig = true;
                 }
+                */
 
-
-                if(tillgänglig)
+                if (tillgänglig)
                 {
                     sökning.Add(bok);
                 }
@@ -81,20 +84,48 @@ namespace Bibliotek
             }
             return sökning;
         }
+
+        public void Lånabok(Bok bok)
+        {
+            Console.WriteLine("nu har du lånat boken");
+            var line = $"{bok.Serienummer} {loggedInPerson.id}";
+            bok.Ledig = false;
+
+            loanedbooks.Add(line);
+            File.WriteAllLines(RentedbooksFilePath, loanedbooks);
+        }
+
         void LoadBooks()
         {
             string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
             dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data);
 
-            foreach (var i in booksData!)
+            foreach (var i in booksData)
             {
-                Bok bok = new Bok((string)i.bokTitel, (int)i.bokSerienummer, (int)i.bokAntal, (string)i.bokFörfattare);
+                Bok bok = new Bok((string)i.titel, (int)i.serienummer, (int)i.antal, (string)i.författare);
                 books.Add(bok);
-
                
             }
         }
 
+        void LoadRentedBooks()
+        {
+            string[] RentedBooks = File.ReadAllLines(RentedbooksFilePath);
+            foreach(string books in RentedBooks)
+            {
+                loanedbooks.Add(books);
+            }
+        }
+
+        void Returnbooks()
+        {
+            
+
+            for(var i = 0;i < loanedbooks.Count();i++)
+            {
+                //lämna tillbaka böcker
+            }
+        }
 
 
     }
