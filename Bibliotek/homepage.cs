@@ -73,7 +73,6 @@ namespace Bibliotek
             {
                 //söka
                 handlebook.Sökaböcker();
-                BokSystem.Lånabok(bok);
             }
             if (val == "2")
             {

@@ -87,12 +87,15 @@ namespace Bibliotek
 
         public void Lånabok(Bok bok)
         {
-            Console.WriteLine("nu har du lånat boken");
-            var line = $"{bok.Serienummer} {loggedInPerson.id}";
-            bok.Ledig = false;
+            if(bok.Ledig)
+            {
+                Console.WriteLine("nu har du lånat boken");
+                var line = $"{bok.Serienummer} {loggedInPerson.id}";
+                bok.Ledig = false;
 
-            loanedbooks.Add(line);
-            File.WriteAllLines(RentedbooksFilePath, loanedbooks);
+                loanedbooks.Add(line);
+                File.WriteAllLines(RentedbooksFilePath, loanedbooks);
+            }
         }
 
         void LoadBooks()

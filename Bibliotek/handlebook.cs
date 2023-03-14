@@ -72,20 +72,23 @@ namespace Bibliotek
                 Console.WriteLine(bok.Författare);
                 Console.WriteLine(bok.Serienummer);
 
+
+                Console.WriteLine("Skulle du vilja låna boken?1:Ja, 2:Nej");
+                string hyraellerej = Console.ReadLine()!;
+
+                if (hyraellerej == "1")
+                {
+                    BokSystem.Lånabok(bok);
+                }
+
+                if (hyraellerej == "2")
+                {
+                    homepage.Användarhemsida();
+                }
             }
 
 
-            Console.WriteLine("Skulle du vilja låna boken?1:Ja, 2:Nej");
-
-            if (val == "1")
-            {
-                BokSystem.Lånabok(bok);
-            }
-
-            if (val == "2")
-            {
-                homepage.Användarhemsida();
-            }
+            
         }
 
 
