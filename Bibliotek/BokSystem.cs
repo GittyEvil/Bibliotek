@@ -13,6 +13,7 @@ namespace Bibliotek
     public class BokSystem
     {
         private static BokSystem? instance = null;
+        private static string kontonFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
         private static string booksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Böcker.txt";
         private static string RentedbooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Lånade_böcker.txt";
         private List<Bok> books = new List<Bok>();
@@ -24,6 +25,7 @@ namespace Bibliotek
         private BokSystem()
         {
             LoadBooks();
+            LoggedUser();
         }
 
         public void AddBok(Bok bok)
@@ -98,12 +100,22 @@ namespace Bibliotek
             }
         }
 
+        void LoggedUser()
+        {
+            string[] personInfo = File.ReadAllLines(kontonFilePath);
+            string[] personLista = personInfo[0].Split(" ");
+            string personId = personLista[0];
+            string förnamn= personLista[1];
+
+            loggedInPerson = new Person(personId, förnamn);
+        }
+
         void LoadBooks()
         {
             string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
-            dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data);
+            dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data)!;
 
-            foreach (var i in booksData)
+            foreach (var i in booksData!)
             {
                 Bok bok = new Bok((string)i.titel, (int)i.serienummer, (int)i.antal, (string)i.författare);
                 books.Add(bok);

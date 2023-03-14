@@ -5,7 +5,7 @@ namespace Bibliotek
     internal class Program
     {
         //imports så jag kan använda class person och bok
-        public static Person GetPerson = new Person("fem","er",1);
+        public static Person GetPerson = new Person("fem","1");
         public static Bok GetBok = new Bok("sluta",1,12,"ja");
         static BokSystem system = BokSystem.GetInstance();
 
@@ -17,40 +17,6 @@ namespace Bibliotek
 
         }
 
-
-        //class för användaren
-        public class Användare : Person
-        {
-            //bool admin = false;
-
-            public Användare(string förnamn, string lösenord, int personnummer) : base(förnamn, lösenord, personnummer)
-            {
-                //admin = false;
-            }
-
-            void inlogg()
-            {
-
-            }
-        }
-
-        //class för bibliotikarie
-        public class Bibliotikarie: Person
-        {
-
-            //bool admin = true;
-            //int adminkod = 12455;
-
-            public Bibliotikarie(string förnamn, string lösenord, int personnummer) : base(förnamn, lösenord, personnummer)
-            {
-                //admin = true;
-            }
-
-            void inlogg()
-            {
-
-            }
-        }
 
         //login sida
         static void FirstPage()
