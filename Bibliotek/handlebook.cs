@@ -81,6 +81,7 @@ namespace Bibliotek
             if (bok.Ledig)
             {
                 Console.WriteLine("2. Hyr bilen");
+
             }
 
             bool userIsRenting = BokSystem.currentPersonLoaningBook(bok);
@@ -134,6 +135,7 @@ namespace Bibliotek
                 if (hyraellerej == "1")
                 {
                     BokSystem.Lånabok(bok);
+                    Lånabok();
                 }
 
                 if (hyraellerej == "2")
@@ -147,7 +149,7 @@ namespace Bibliotek
         }
         static void Lånabok()
         {
-            Console.WriteLine("");
+            Console.WriteLine("boken är nu lånad");
         }
 
         void ListaLånadeBöcker()
