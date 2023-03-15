@@ -109,7 +109,21 @@ namespace Bibliotek
 
             loggedInPerson = new Person(personId, förnamn);
         }
+        public bool currentPersonLoaningBook(Bok bok)
+        {
+            foreach (string line in loanedbooks)
+            {
+                string[] bookinformation = line.Split(" ");
+                int loanedbookId = Int32.Parse(bookinformation[0]);
+                string personId = bookinformation[1];
 
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
         void LoadBooks()
         {
             string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
@@ -132,13 +146,35 @@ namespace Bibliotek
             }
         }
 
-        void Returnbooks()
+        public bool Returnbooks(Bok bok)
         {
-            
+            var bookremover = -1;
 
-            for(var i = 0;i < loanedbooks.Count();i++)
+
+            for (var i = 0;i < loanedbooks.Count();i++)
             {
+                
                 //lämna tillbaka böcker
+                var line = loanedbooks[i];
+                string[] bookinformation = line.Split(" ");
+                int loanedbookId = Int32.Parse(bookinformation[0]);
+                string personId = bookinformation[1];
+
+                if(bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
+                {
+                    bookremover = i;
+                }
+            }
+
+            if(bookremover == -1)
+            {
+                return false;
+            }else
+            {
+                loanedbooks.RemoveAt(bookremover);
+                File.WriteAllLines(RentedbooksFilePath, loanedbooks);
+                bok.Ledig = true;
+                return true;
             }
         }
 

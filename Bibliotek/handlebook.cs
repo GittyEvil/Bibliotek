@@ -41,18 +41,73 @@ namespace Bibliotek
             {
                 Bok bok = books[i];
 
-                Console.WriteLine($"{bok.Titel} {bok.Författare} {bok.Serienummer} {bok.Antal}");
+                Console.WriteLine($"{i + 1}.{bok.Titel} {bok.Författare} {bok.Serienummer} {bok.Antal}");
             }
 
             Console.WriteLine("Skulle du vilja söka efter en specifik bok? 1:Ja, 2:Nej");
-            string val = Console.ReadLine();
+            string val = Console.ReadLine()!;
+
             if(val == "1")
             {
-                Sökaböcker();
+                Console.WriteLine("Vilken bok? Du kan söka med författare och serienummer också.");
+                var choice = Console.ReadLine();
+                int number;
+
+                var isNumber = int.TryParse(choice, out number);
+
+                if (isNumber && number > 0 && number < books.Count + 1)
+                {
+                    BokHanterare(books[number - 1]);
+                }
+
             }
-            if(val =="2")
+            if (val =="2")
             {
                 homepage.Användarhemsida(); 
+            }
+        }
+
+        static void BokHanterare(Bok bok)
+        {
+            Console.WriteLine(bok.Titel);
+            Console.WriteLine(bok.Författare);
+            Console.WriteLine(bok.Serienummer);
+            Console.WriteLine(bok.Antal);
+
+            Console.WriteLine("Vad skulle du vilja göra nu?");
+            Console.WriteLine("");
+            Console.WriteLine("1. Gå tillbaka");
+
+            if (bok.Ledig)
+            {
+                Console.WriteLine("2. Hyr bilen");
+            }
+
+            bool userIsRenting = BokSystem.currentPersonLoaningBook(bok);
+
+            if (userIsRenting)
+            {
+                Console.WriteLine("2. Lämna tillbaka bilen");
+
+            }
+
+            Console.Write("Ditt val (1-2): ");
+            var choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+                Listaböcker();
+            }
+            else if (choice == "2" && bok.Ledig)
+            {
+                BokSystem.Lånabok(bok);
+
+                Lånabok();
+            }
+            else if (choice == "2" && userIsRenting)
+            {
+                BokSystem.Returnbooks(bok);
+                LämnatillbakaBöcker();
             }
         }
 
@@ -90,8 +145,22 @@ namespace Bibliotek
 
             
         }
+        static void Lånabok()
+        {
+            Console.WriteLine("");
+        }
+
+        void ListaLånadeBöcker()
+        {
+            //fixa så man kan lista lånade böcker
+            Console.WriteLine("");
+        }
 
 
-
+        public static void LämnatillbakaBöcker()
+        {
+            //lämna tillbaka böcker
+            Console.WriteLine("");
+        }
     }
 }

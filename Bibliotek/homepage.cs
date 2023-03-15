@@ -13,45 +13,30 @@ namespace Bibliotek
             Console.WriteLine("du är inloggad");
 
             Console.WriteLine("Vad vill du göra?");
-            Console.WriteLine("1, låna bok?");
-            Console.WriteLine("2, söka bok?");
-            Console.WriteLine("3, lämna tillbaka en bok?");
-            Console.WriteLine("4,byta lösenord?");
-            Console.WriteLine("5, lägga till bok?");
-            Console.WriteLine("6, Lista böcker?");
+            Console.WriteLine("1, lista böcker?");
+            Console.WriteLine("2,byta kontouppgifter?");
+            Console.WriteLine("3, lägga till bok?");
+            Console.WriteLine("4, söka bok?");
 
             string val = Console.ReadLine()!;
-            if (val == "0")
-            {
-                handlebook.Sökaböcker();
-            }
+
             if (val == "1")
             {
-                handlebook.Sökaböcker();
+                handlebook.Listaböcker();
             }
             if (val == "2")
             {
-                //reservera
+                ChangePassword.PasswordChange();
             }
             if (val == "3")
             {
-                //lämna tillbaka
+                handlebook.Listaböcker();
             }
-            if (val == "4")
-            {
-                //byta lösenord
-            }
-            if(val == "5")
+            if(val == "4")
             {
                 handlebook.Addbokpage();
                 
             }
-            if(val == "6")
-            {
-                handlebook.Listaböcker();
-            }
-            
-
 
         }
 
@@ -61,34 +46,24 @@ namespace Bibliotek
             Console.WriteLine("du är inloggad");
 
             Console.WriteLine("Vad vill du göra?");
-            Console.WriteLine("1, låna bok?");
-            Console.WriteLine("2, söka bok?");
-            Console.WriteLine("3, lämna tillbaka en bok?");
-            Console.WriteLine("4, byta lösenord?");
-            Console.WriteLine("5, lista böcker");
+            Console.WriteLine("1, lista  böcker?");
+            Console.WriteLine("2, byta kontouppgifter");
+            Console.WriteLine("3, söka bok?");
 
             string val = Console.ReadLine()!;
 
             if (val == "1")
             {
                 //söka
-                handlebook.Sökaböcker();
+                handlebook.Listaböcker();
             }
-            if (val == "2")
-            {
-                handlebook.Sökaböcker();
-            }
-            if (val == "3")
-            {
-                //lämna tillbaka
-            }
-            if (val == "4")
+            if (val == "w")
             {
                 ChangePassword.PasswordChange();
             }
-            if (val == "5")
+            if (val == "3")
             {
-                handlebook.Listaböcker();
+                handlebook.Sökaböcker();
             }
 
         }
