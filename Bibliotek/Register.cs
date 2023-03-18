@@ -63,6 +63,8 @@ namespace Bibliotek
         {
             string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
             dynamic personData = JsonConvert.DeserializeObject<dynamic>(Data)!;
+            string bData = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bKonton.json");
+            dynamic personbibData = JsonConvert.DeserializeObject<dynamic>(Data)!;
 
             //string path = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
             //string bibliotikarie_path = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt";
@@ -97,7 +99,20 @@ namespace Bibliotek
 
             if (val == "1")
             {
-                //fixa sen
+                Console.WriteLine("skriv personnummer:");
+                string personnummer2 = Console.ReadLine()!;
+                Console.WriteLine("skriv ett lösenord");
+                string lösenord2 = Console.ReadLine()!;
+                Console.WriteLine("du har nu skapat ett konto.");
+
+                Person newUser2 = new Person("test", "test", Int32.Parse(personnummer2!), Int32.Parse(lösenord2!));
+
+                personbibData.Add(JToken.FromObject(newUser2));
+
+                string dataToSave = JsonConvert.SerializeObject(personbibData);
+                File.WriteAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bKonton.json", dataToSave);
+
+                Login.LoggaIn();
             }
         }
     }

@@ -71,13 +71,14 @@ namespace Bibliotek
             Console.WriteLine("Vad skulle du vilja göra nu?");
             Console.WriteLine("1. Gå tillbaka");
 
+            bool userIsRenting = BokSystem.currentPersonLoaningBook(bok);
+            
             if (bok.Ledig)
             {
                 Console.WriteLine("2. Låna bok");
 
             }
-
-            bool userIsRenting = BokSystem.currentPersonLoaningBook(bok);
+            
 
             if (userIsRenting)
             {
@@ -92,12 +93,14 @@ namespace Bibliotek
             {
                 Listaböcker();
             }
+            
             else if (choice == "2" && bok.Ledig)
             {
                 BokSystem.Lånabok(bok);
 
                 Lånabok();
             }
+            
             else if (choice == "2" && userIsRenting)
             {
                 BokSystem.Returnbooks(bok);
