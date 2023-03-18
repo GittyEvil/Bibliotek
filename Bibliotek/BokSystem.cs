@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -16,12 +17,26 @@ namespace Bibliotek
         private static string kontonFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
         private static string booksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Böcker.txt";
         private static string RentedbooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Lånade_böcker.txt";
+        public string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
+        public string userData = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
         private List<Bok> books = new List<Bok>();
         private List<string> loanedbooks = new List<string>();
         private Person loggedInPerson;
 
         public List<Bok> GetBooks() { return books; }
+        public bool currentPersonLoaningBook(Bok bok)
+        {
+            foreach (string line in loanedbooks)
+            {
+                string[] bookinformation = line.Split(" ");
+                int loanedbookId = Int32.Parse(bookinformation[0]);
+                string personId = bookinformation[1];
 
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id) return true;
+                
+            }
+            return false;
+        }
         private BokSystem()
         {
             LoadBooks();
@@ -102,31 +117,26 @@ namespace Bibliotek
 
         void LoggedUser()
         {
+            /*
             string[] personInfo = File.ReadAllLines(kontonFilePath);
             string[] personLista = personInfo[0].Split(" ");
             string personId = personLista[0];
             string förnamn= personLista[1];
 
             loggedInPerson = new Person(personId, förnamn);
-        }
-        public bool currentPersonLoaningBook(Bok bok)
-        {
-            foreach (string line in loanedbooks)
-            {
-                string[] bookinformation = line.Split(" ");
-                int loanedbookId = Int32.Parse(bookinformation[0]);
-                string personId = bookinformation[1];
+            */
 
-                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
-                {
-                    return true;
-                }
+            //string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
+            dynamic personData = JsonConvert.DeserializeObject<dynamic>(userData)!;
+            foreach(var i in personData)
+            {
+                loggedInPerson = new Person((string)i.personnummer, (string)i.lösenord);
             }
-            return false;
         }
+        
         void LoadBooks()
         {
-            string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
+            //string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
             dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data)!;
 
             foreach (var i in booksData!)
@@ -154,7 +164,6 @@ namespace Bibliotek
             for (var i = 0;i < loanedbooks.Count();i++)
             {
                 
-                //lämna tillbaka böcker
                 var line = loanedbooks[i];
                 string[] bookinformation = line.Split(" ");
                 int loanedbookId = Int32.Parse(bookinformation[0]);

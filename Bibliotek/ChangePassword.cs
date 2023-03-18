@@ -1,82 +1,27 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
+using System.Text.Json.Nodes;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Bibliotek
 {
     public class ChangePassword
     {
-
-        public static void PasswordChange() 
-        {
-                Console.WriteLine("-------------------------------");
-                Console.WriteLine("|          Logga in           |");
-                Console.WriteLine("|          Vikarie(1)         |");
-                Console.WriteLine("|          användare(2)       |");
-                Console.WriteLine("|                             |");
-                Console.WriteLine("|                             |");
-                Console.WriteLine("-------------------------------");
-                Console.WriteLine("");
-                //Console.Clear();
+        //temp.PasswordChange();
+       
 
 
 
-                string[] Användarnamncheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt");
-                string[] bilbiotikariecheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt");
-
-                string val = Console.ReadLine();
-
-                foreach (string line in Användarnamncheck)
-                {
-                    foreach (string lines in bilbiotikariecheck)
-                    {
-                        var spliting = line.Split(" ");
-                        var bibliotikariesplit = lines.Split(" ");
-
-                        var bibliotikarienamn = bibliotikariesplit[0];
-                        var bibliotikarielösenord = bibliotikariesplit[1];
-
-                        var användarnamn1 = spliting[0];
-                        var lösenord1 = spliting[1];
 
 
-                        if (val == "1")
-                        {
-                            Console.WriteLine("Vänligen skriv in ditt personnummer");
-                            string användarnamn = Console.ReadLine();
-                            Console.WriteLine("Skriv in ditt lösenord");
-                            string lösenord = Console.ReadLine();
-
-                            if (bibliotikarienamn == användarnamn && bibliotikarielösenord == lösenord)
-                            {
-                                
-                            }
-                        PasswordChange();
-                        }
-
-                        if (val == "2")
-                        {
-                            Console.WriteLine("Vänligen skriv in ditt personnummer");
-                            string användarnamn = Console.ReadLine();
-                            Console.WriteLine("Skriv in ditt lösenord");
-                            string lösenord = Console.ReadLine();
-
-                            if (användarnamn1 == användarnamn && lösenord1 == lösenord)
-                            {
-                                
-                            }
-                        PasswordChange();
-                        }
-
-
-                    }
-
-
-
-                }
-
-        }
     }
+
 }
+

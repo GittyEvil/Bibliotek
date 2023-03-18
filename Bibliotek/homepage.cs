@@ -26,7 +26,7 @@ namespace Bibliotek
             }
             if (val == "2")
             {
-                ChangePassword.PasswordChange();
+                //ChangePassword.PasswordChange();
             }
             if (val == "3")
             {
@@ -54,12 +54,11 @@ namespace Bibliotek
 
             if (val == "1")
             {
-                //söka
                 handlebook.Listaböcker();
             }
             if (val == "w")
             {
-                ChangePassword.PasswordChange();
+                //ChangePassword.PasswordChange();
             }
             if (val == "3")
             {

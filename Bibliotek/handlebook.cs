@@ -25,12 +25,6 @@ namespace Bibliotek
             BokSystem.AddBok(nybok);
         }
 
-        public static void Tabortbok()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-        }
        
         public static void Listaböcker()
         {
@@ -75,12 +69,11 @@ namespace Bibliotek
             Console.WriteLine(bok.Antal);
 
             Console.WriteLine("Vad skulle du vilja göra nu?");
-            Console.WriteLine("");
             Console.WriteLine("1. Gå tillbaka");
 
             if (bok.Ledig)
             {
-                Console.WriteLine("2. Hyr bilen");
+                Console.WriteLine("2. Låna bok");
 
             }
 
@@ -88,7 +81,7 @@ namespace Bibliotek
 
             if (userIsRenting)
             {
-                Console.WriteLine("2. Lämna tillbaka bilen");
+                Console.WriteLine("2. Lämna tillbaka bok");
 
             }
 
@@ -149,7 +142,8 @@ namespace Bibliotek
         }
         static void Lånabok()
         {
-            Console.WriteLine("boken är nu lånad");
+            Console.WriteLine("bok är nu lånad");
+            //Listaböcker();
         }
 
         void ListaLånadeBöcker()
@@ -162,7 +156,8 @@ namespace Bibliotek
         public static void LämnatillbakaBöcker()
         {
             //lämna tillbaka böcker
-            Console.WriteLine("");
+            Console.WriteLine("boken är nu återlämnad");
+            //Listaböcker();
         }
     }
 }

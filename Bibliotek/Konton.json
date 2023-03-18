@@ -1,8 +1,30 @@
 [
   {
     "förnamn": "Adrian",
-    "Efternamn": "Stude",
-    "personnummer": "123",
-    "lösenord": "1234"
+    "efternamn": "Stude",
+    "personnummer": 123,
+    "lösenord": 1234,
+    "id": 1
+  },
+  {
+    "förnamn": "test",
+    "efternamn": "test",
+    "personnummer": 142,
+    "lösenord": 1234,
+    "id": 2
+  },
+  {
+    "förnamn": "Olle",
+    "efternamn": "ottesson",
+    "personummer": 167,
+    "lösenord": 2334,
+    "id": 3
+  },
+  {
+    "förnamn": "test",
+    "efternamn": "test",
+    "personnummer": 145,
+    "lösenord": 2344,
+    "id": 4
   }
 ]

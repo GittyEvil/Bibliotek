@@ -12,10 +12,12 @@ namespace Bibliotek
 {
     public class Login
     {
-
+            
         public static void LoggaIn()
         {
-            Console.WriteLine("-------------------------------");
+            temp.LoggaIntemp();
+
+            /*Console.WriteLine("-------------------------------");
             Console.WriteLine("|          Logga in           |");
             Console.WriteLine("|          Vikarie(1)         |");
             Console.WriteLine("|          användare(2)       |");
@@ -36,7 +38,7 @@ namespace Bibliotek
 
             foreach (string line in Användarnamncheck)
             {
-                foreach(string lines in bilbiotikariecheck)
+                foreach (string lines in bilbiotikariecheck)
                 {
                     var spliting = line.Split(" ");
                     var bibliotikariesplit = lines.Split(" ");
@@ -51,7 +53,7 @@ namespace Bibliotek
                     //var password1 = userData.lösenord;
                     //var personnummer1 =userData.personnummer.ToString();
 
-                    
+
                     if (val == "1")
                     {
                         Console.WriteLine("Vänligen skriv in ditt personnummer");
@@ -64,13 +66,13 @@ namespace Bibliotek
                         {
                             homepage.Hemsida();
                         }
-                        */
+                        
                         if (bibliotikarienamn == användarnamn && bibliotikarielösenord == lösenord)
                         {
                             homepage.Hemsida();
                             return;
                         }
-                        
+
                         LoggaIn();
                     }
 
@@ -91,15 +93,16 @@ namespace Bibliotek
 
 
                 }
-               
+
 
 
             }
 
-            
 
-
-
+    
+            */
         }
+
+
     }
 }
