@@ -35,6 +35,7 @@ namespace Bibliotek
             {
                 Bok bok = books[i];
 
+
                 Console.WriteLine($"{i + 1}.{bok.Titel} {bok.Författare} {bok.Serienummer} {bok.Antal}");
             }
 

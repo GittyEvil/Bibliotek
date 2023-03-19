@@ -4,11 +4,11 @@ namespace Bibliotek
 {
     public class Person
     {
-        public string förnamn { get; set; }
-        public string efternamn { get; set; }
-        public string id { get; set; }
-        public int personnummer { get; set; }
-        public int lösenord { get; set; }
+        public string? förnamn { get; set; }
+        public string? efternamn { get; set; }
+        public string? id { get; set; }
+        public int? personnummer { get; set; }
+        public int? lösenord { get; set; }
 
         public Person(string förnamn, string id) //string efternamn, string personnummer, int lösenord)
         {

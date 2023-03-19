@@ -26,56 +26,54 @@ namespace Bibliotek
             string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
             dynamic personData = JsonConvert.DeserializeObject<dynamic>(Data)!;
             string bData = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bKonton.json");
-            dynamic personbibData = JsonConvert.DeserializeObject<dynamic>(Data)!;
-
+            dynamic personbibData = JsonConvert.DeserializeObject<dynamic>(bData)!;
 
             string val = Console.ReadLine()!;
-            foreach(var i in personData)
+            foreach (var i in personData)
             {
-            foreach(var j in personbibData)
+                var personnummer1 = (string)i["personnummer"];
+                var lösenord1 = (string)i["lösenord"];
+
+                if (val == "2")
                 {
-                    Person person = new Person((string)i.personnummer, (string)i.lösenord);
-                    Person person2 = new Person((string)j.personnummer, (string)j.lösenord);
-                    var personnummer2 = j.personnummer;
-                    var lösenord2 = j.lösenord;
-                    var personnummer1 = i.personnummer;
-                    var lösenord1 = i.lösenord;
+                    Console.WriteLine("Vänligen skriv in ditt personnummer");
+                    string personnummer = Console.ReadLine()!;
+                    Console.WriteLine("Skriv in ditt lösenord");
+                    string lösenord = Console.ReadLine()!;
+                    loggedInPerson = new Person(personnummer, lösenord);
 
-                    if (val == "2")
+                    if (personnummer1 == personnummer && lösenord1 == lösenord)
                     {
-                        Console.WriteLine("Vänligen skriv in ditt personnummer");
-                        string personnummer = Console.ReadLine()!;
-                        Console.WriteLine("Skriv in ditt lösenord");
-                        string lösenord = Console.ReadLine()!;
-                        loggedInPerson = new Person(personnummer, lösenord);
-                        if (personnummer1 == personnummer && lösenord1 == lösenord)
-                        {
-                            homepage.Hemsida();
-                            return;
-                        }
-
-                        Login.LoggaIn();
-                    }
-
-                    if (val == "1")
-                    {
-                        Console.WriteLine("Vänligen skriv in ditt personnummer");
-                        string användarnamn2 = Console.ReadLine()!;
-                        Console.WriteLine("Skriv in ditt lösenord");
-                        string lösenord3 = Console.ReadLine()!;
-
-                        if (personnummer2 == användarnamn2 && lösenord2 == lösenord3)
-                        {
-                            homepage.Användarhemsida();
-                            return;
-                        }
-                        Login.LoggaIn();
+                        homepage.Hemsida();
+                        return;
                     }
                 }
-                
-                
-
             }
+
+            foreach (var i in personbibData)
+            {
+                var personnummer1 = (string)i["personnummer"];
+                var lösenord1 = (string)i["lösenord"];
+
+                if (val == "1")
+                {
+                    Console.WriteLine("Vänligen skriv in ditt personnummer");
+                    string personnummer = Console.ReadLine()!;
+                    Console.WriteLine("Skriv in ditt lösenord");
+                    string lösenord = Console.ReadLine()!;
+                    loggedInPerson = new Person(personnummer, lösenord);
+
+                    if (personnummer1 == personnummer && lösenord1 == lösenord)
+                    {
+                        homepage.Hemsida();
+                        return;
+                    }
+                }
+            }
+
+            Login.LoggaIn();
+
+        }
             static void PasswordChange()
             {
                 
@@ -190,4 +188,4 @@ namespace Bibliotek
 
         }
     }
-}
+

@@ -15,32 +15,36 @@ namespace Bibliotek
     {
         private static BokSystem? instance = null;
         private static string kontonFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
-        private static string booksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Böcker.txt";
+        private static string BooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Böcker.txt";
         private static string RentedbooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Lånade_böcker.txt";
         public string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
         public string userData = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
         private List<Bok> books = new List<Bok>();
-        private List<string> loanedbooks = new List<string>();
-        private Person loggedInPerson;
+        private static List<string> loanedbooks = new List<string>();
+        public  static Person? loggedInPerson;
 
         public List<Bok> GetBooks() { return books; }
-        public bool currentPersonLoaningBook(Bok bok)
+        public static bool currentPersonLoaningBook(Bok bok)
         {
-            foreach (string line in loanedbooks)
+            foreach (var line in loanedbooks)
             {
                 string[] bookinformation = line.Split(" ");
                 int loanedbookId = Int32.Parse(bookinformation[0]);
                 string personId = bookinformation[1];
 
-                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id) return true;
-                
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
+                {
+                    return true;
+                }
             }
+
             return false;
         }
         private BokSystem()
         {
             LoadBooks();
             LoggedUser();
+            
         }
 
         public void AddBok(Bok bok)
@@ -55,7 +59,7 @@ namespace Bibliotek
             string[] bokStringArr = books.Select(bok => $"{bok.Titel} {bok.Antal} {bok.Serienummer} {bok.Författare}").ToArray();
 
 
-            File.WriteAllLines(booksFilePath, bokStringArr);
+            File.WriteAllLines(BooksFilePath, bokStringArr);
         }
 
         public static BokSystem GetInstance()
@@ -106,12 +110,20 @@ namespace Bibliotek
         {
             if(bok.Ledig)
             {
-                Console.WriteLine("nu har du lånat boken");
-                var line = $"{bok.Serienummer} {loggedInPerson.id}";
-                bok.Ledig = false;
+                if (bok.Ledig)
+                {
+                    var line = $"{bok.Serienummer} {loggedInPerson.id}";
+                    bok.Ledig = false;
 
-                loanedbooks.Add(line);
-                File.WriteAllLines(RentedbooksFilePath, loanedbooks);
+                    loanedbooks.Add(line);
+                    File.WriteAllLines(RentedbooksFilePath, loanedbooks);
+
+                    Console.WriteLine($"Du har lånat boken '{bok.Titel}'. Glöm inte att lämna tillbaka den senast om tre veckor.");
+                }
+                else
+                {
+                    Console.WriteLine($"Boken '{bok.Titel}' är redan utlånad.");
+                }
             }
         }
 
@@ -156,33 +168,33 @@ namespace Bibliotek
             }
         }
 
-        public bool Returnbooks(Bok bok)
+        public static bool Returnbooks(Bok bok)
         {
             var bookremover = -1;
 
-
-            for (var i = 0;i < loanedbooks.Count();i++)
+            for (var i = 0; i < loanedbooks.Count(); i++)
             {
-                
                 var line = loanedbooks[i];
                 string[] bookinformation = line.Split(" ");
                 int loanedbookId = Int32.Parse(bookinformation[0]);
                 string personId = bookinformation[1];
 
-                if(bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
                 {
                     bookremover = i;
                 }
             }
 
-            if(bookremover == -1)
+            if (bookremover == -1)
             {
                 return false;
-            }else
+            }
+            else
             {
                 loanedbooks.RemoveAt(bookremover);
                 File.WriteAllLines(RentedbooksFilePath, loanedbooks);
                 bok.Ledig = true;
+                Console.WriteLine($"Du har lämnat tillbaka boken '{bok.Titel}'. Tack för att du lånade den!");
                 return true;
             }
         }
