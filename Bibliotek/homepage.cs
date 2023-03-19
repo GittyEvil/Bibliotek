@@ -10,6 +10,7 @@ namespace Bibliotek
     {
         public static void Hemsida()
         {
+            var bibliotikarie =true;
             Console.WriteLine("du är inloggad");
 
             Console.WriteLine("Vad vill du göra?");
@@ -22,7 +23,8 @@ namespace Bibliotek
 
             if (val == "1")
             {
-                handlebook.Listaböcker();
+                handlebook.Listaböcker(); 
+                
             }
             if (val == "2")
             {
@@ -42,6 +44,7 @@ namespace Bibliotek
 
         public static void Användarhemsida()
         {
+            var bibliotikare = false;
 
             Console.WriteLine("du är inloggad");
 

@@ -14,7 +14,7 @@ namespace Bibliotek
     public class BokSystem
     {
         private static BokSystem? instance = null;
-        private static string kontonFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
+        //private static string kontonFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt";
         private static string BooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Böcker.txt";
         private static string RentedbooksFilePath = "C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Lånade_böcker.txt";
         public string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
@@ -32,7 +32,7 @@ namespace Bibliotek
                 int loanedbookId = Int32.Parse(bookinformation[0]);
                 string personId = bookinformation[1];
 
-                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson!.id)
                 {
                     return true;
                 }
@@ -112,7 +112,7 @@ namespace Bibliotek
             {
                 if (bok.Ledig)
                 {
-                    var line = $"{bok.Serienummer} {loggedInPerson.id}";
+                    var line = $"{bok.Serienummer} {loggedInPerson!.id}";
                     bok.Ledig = false;
 
                     loanedbooks.Add(line);
@@ -179,7 +179,7 @@ namespace Bibliotek
                 int loanedbookId = Int32.Parse(bookinformation[0]);
                 string personId = bookinformation[1];
 
-                if (bok.Serienummer == loanedbookId && personId == loggedInPerson.id)
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson!.id)
                 {
                     bookremover = i;
                 }

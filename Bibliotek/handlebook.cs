@@ -29,6 +29,7 @@ namespace Bibliotek
         public static void Listaböcker()
         {
             List<Bok> books = BokSystem.GetBooks();
+            bool bibliotikarie = false;
 
 
             for(var i=0;i < books.Count;i++)
@@ -44,7 +45,7 @@ namespace Bibliotek
 
             if(val == "1")
             {
-                Console.WriteLine("Vilken bok? Du kan söka med författare och serienummer också.");
+                Console.WriteLine("Vilken bok? Välj via nummer listat.");
                 var choice = Console.ReadLine();
                 int number;
 
@@ -52,17 +53,23 @@ namespace Bibliotek
 
                 if (isNumber && number > 0 && number < books.Count + 1)
                 {
-                    BokHanterare(books[number - 1]);
+                    BokSida(books[number - 1]);
                 }
 
             }
             if (val =="2")
             {
-                homepage.Användarhemsida(); 
+                if(bibliotikarie)
+                {
+                    homepage.Användarhemsida();
+                }else if(!bibliotikarie) {
+                    homepage.Hemsida();
+                }
+                
             }
         }
 
-        static void BokHanterare(Bok bok)
+        static void BokSida(Bok bok)
         {
             Console.WriteLine(bok.Titel);
             Console.WriteLine(bok.Författare);
@@ -99,7 +106,7 @@ namespace Bibliotek
             {
                 BokSystem.Lånabok(bok);
 
-                Lånabok();
+                //Lånabok();
             }
             
             else if (choice == "2" && userIsRenting)
@@ -132,7 +139,7 @@ namespace Bibliotek
                 if (hyraellerej == "1")
                 {
                     BokSystem.Lånabok(bok);
-                    Lånabok();
+                    //Lånabok();
                 }
 
                 if (hyraellerej == "2")
@@ -143,11 +150,6 @@ namespace Bibliotek
 
 
             
-        }
-        static void Lånabok()
-        {
-            Console.WriteLine("bok är nu lånad");
-            //Listaböcker();
         }
 
         void ListaLånadeBöcker()
