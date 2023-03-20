@@ -24,6 +24,8 @@ namespace Bibliotek
         public  static Person? loggedInPerson;
 
         public List<Bok> GetBooks() { return books; }
+
+        //kollar ifall en person redan lånar en viss bok, genom att läsa fil och kolla så id/serienummer + person id stämmer
         public static bool currentPersonLoaningBook(Bok bok)
         {
             foreach (var line in loanedbooks)
@@ -46,13 +48,13 @@ namespace Bibliotek
             LoggedUser();
             
         }
-
+        //tar in en specifik bok för att lägga till körs via save
         public void AddBok(Bok bok)
         {
             books.Add(bok);
             Save();
         }
-
+        //sparar boken i en lista(funkar)
         public void Save()
         {
 
@@ -70,7 +72,7 @@ namespace Bibliotek
             }
             return instance;
         }
-
+        //detta är för att söka upp böcker, tar in input och jämför
         public List<Bok> Hittabooks(string val)
         {
             var sökning = new List<Bok>();
@@ -105,7 +107,7 @@ namespace Bibliotek
             }
             return sökning;
         }
-
+        //tar in en specifik bok och kollar om den är ledig, är den så läggs den till i lånadeböckertxt med id och serienummer
         public void Lånabok(Bok bok)
         {
             if(bok.Ledig)
@@ -126,7 +128,7 @@ namespace Bibliotek
                 }
             }
         }
-
+        //hanterar personer som loggar in
         void LoggedUser()
         {
             /*
@@ -145,6 +147,7 @@ namespace Bibliotek
                 loggedInPerson = new Person((string)i.personnummer, (string)i.lösenord);
             }
         }
+        //laddar upp böcker
         
         void LoadBooks()
         {
@@ -158,7 +161,7 @@ namespace Bibliotek
                
             }
         }
-
+        //laddar upp lånade böcker från en txt fil
         void LoadRentedBooks()
         {
             string[] RentedBooks = File.ReadAllLines(RentedbooksFilePath);
@@ -167,7 +170,7 @@ namespace Bibliotek
                 loanedbooks.Add(books);
             }
         }
-
+        //hanterar lämnandet av böcker, går igenom txt och kollar om inloggade personen stämmer över ifall så lämnar den tillbaka
         public static bool Returnbooks(Bok bok)
         {
             var bookremover = -1;

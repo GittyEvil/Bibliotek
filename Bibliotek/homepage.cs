@@ -8,6 +8,7 @@ namespace Bibliotek
 {
     public class homepage
     {
+        //hemsida för bibliotikarie
         public static void Hemsida()
         {
             var bibliotikarie =true;
@@ -28,20 +29,20 @@ namespace Bibliotek
             }
             if (val == "2")
             {
-                //ChangePassword.PasswordChange();
+                ChangePassword.PasswordChange();
             }
-            if (val == "3")
-            {
-                handlebook.Listaböcker();
-            }
-            if(val == "4")
+            if(val == "3")
             {
                 handlebook.Addbokpage();
                 
             }
+            if (val == "4")
+            {
+                //handlebook.Listaböcker();
+            }
 
         }
-
+        //hemsida för användare
         public static void Användarhemsida()
         {
             var bibliotikare = false;
@@ -61,7 +62,7 @@ namespace Bibliotek
             }
             if (val == "w")
             {
-                //ChangePassword.PasswordChange();
+                ChangePassword.PasswordChange();
             }
             if (val == "3")
             {

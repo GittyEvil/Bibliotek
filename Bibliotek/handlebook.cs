@@ -10,6 +10,7 @@ namespace Bibliotek
     public class handlebook
     {
         static BokSystem BokSystem = BokSystem.GetInstance();
+        //för att lägga till böcker
         public static void Addbokpage()
         {
             Console.WriteLine("Vad är titeln för boken");
@@ -25,7 +26,7 @@ namespace Bibliotek
             BokSystem.AddBok(nybok);
         }
 
-       
+       //listar upp alla böcker från böcker.json
         public static void Listaböcker()
         {
             List<Bok> books = BokSystem.GetBooks();
@@ -68,7 +69,7 @@ namespace Bibliotek
                 
             }
         }
-
+        //main sidan typ, tar in alla lsitade böcker, går att låna och lämna tillbaka
         static void BokSida(Bok bok)
         {
             Console.WriteLine(bok.Titel);
@@ -116,6 +117,7 @@ namespace Bibliotek
             }
         }
 
+        //söka upp specifik bok
         public static void Sökaböcker()
         {
 
@@ -151,7 +153,7 @@ namespace Bibliotek
 
             
         }
-
+        
         void ListaLånadeBöcker()
         {
             //fixa så man kan lista lånade böcker

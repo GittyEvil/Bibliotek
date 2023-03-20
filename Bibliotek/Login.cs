@@ -12,12 +12,11 @@ namespace Bibliotek
 {
     public class Login
     {
-            
+        static Person? loggedInPerson = null;
+
         public static void LoggaIn()
         {
-            temp.LoggaIntemp();
-
-            /*Console.WriteLine("-------------------------------");
+            Console.WriteLine("-------------------------------");
             Console.WriteLine("|          Logga in           |");
             Console.WriteLine("|          Vikarie(1)         |");
             Console.WriteLine("|          användare(2)       |");
@@ -27,81 +26,63 @@ namespace Bibliotek
             Console.WriteLine("");
             //Console.Clear();
 
+            //tar in data
+            string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
+            dynamic personData = JsonConvert.DeserializeObject<dynamic>(Data)!;
+            string bData = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bKonton.json");
+            dynamic personbibData = JsonConvert.DeserializeObject<dynamic>(bData)!;
 
-
-            string[] Användarnamncheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\konton.txt");
-            string[] bilbiotikariecheck = System.IO.File.ReadAllLines("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\bibliotikarie_konton.txt");
-            //string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
-            //var userData = JsonSerializer.Deserialize<Person>(Data);
-
-            string val = Console.ReadLine();
-
-            foreach (string line in Användarnamncheck)
+            //kollar så input är likadan som det som finns i json filen, om det stämmer = inloggad
+            string val = Console.ReadLine()!;
+            foreach (var i in personData)
             {
-                foreach (string lines in bilbiotikariecheck)
+                var personnummer1 = (string)i["personnummer"];
+                var lösenord1 = (string)i["lösenord"];
+
+                if (val == "2")
                 {
-                    var spliting = line.Split(" ");
-                    var bibliotikariesplit = lines.Split(" ");
+                    Console.WriteLine("Vänligen skriv in ditt personnummer");
+                    string personnummer = Console.ReadLine()!;
+                    Console.WriteLine("Skriv in ditt lösenord");
+                    string lösenord = Console.ReadLine()!;
+                    loggedInPerson = new Person(personnummer, lösenord);
 
-                    var bibliotikarienamn = bibliotikariesplit[0];
-                    var bibliotikarielösenord = bibliotikariesplit[1];
-
-                    var användarnamn1 = spliting[0];
-                    var lösenord1 = spliting[1];
-
-                    //var username1 = userData.förnamn;
-                    //var password1 = userData.lösenord;
-                    //var personnummer1 =userData.personnummer.ToString();
-
-
-                    if (val == "1")
+                    if (personnummer1 == personnummer && lösenord1 == lösenord)
                     {
-                        Console.WriteLine("Vänligen skriv in ditt personnummer");
-                        string användarnamn = Console.ReadLine();
-                        Console.WriteLine("Skriv in ditt lösenord");
-                        string lösenord = Console.ReadLine();
-
-
-                        /*if(användarnamn == personnummer1 && lösenord == password1)
-                        {
-                            homepage.Hemsida();
-                        }
-                        
-                        if (bibliotikarienamn == användarnamn && bibliotikarielösenord == lösenord)
-                        {
-                            homepage.Hemsida();
-                            return;
-                        }
-
-                        LoggaIn();
+                        homepage.Hemsida();
+                        return;
                     }
-
-                    if (val == "2")
-                    {
-                        Console.WriteLine("Vänligen skriv in ditt personnummer");
-                        string användarnamn = Console.ReadLine();
-                        Console.WriteLine("Skriv in ditt lösenord");
-                        string lösenord = Console.ReadLine();
-
-                        if (användarnamn1 == användarnamn && lösenord1 == lösenord)
-                        {
-                            homepage.Användarhemsida();
-                            return;
-                        }
-                        LoggaIn();
-                    }
-
-
                 }
-
-
-
             }
+            //för bibliotikarier
+            foreach (var i in personbibData)
+            {
+                var personnummer1 = (string)i["personnummer"];
+                var lösenord1 = (string)i["lösenord"];
+
+                if (val == "1")
+                {
+                    Console.WriteLine("Vänligen skriv in ditt personnummer");
+                    string personnummer = Console.ReadLine()!;
+                    Console.WriteLine("Skriv in ditt lösenord");
+                    string lösenord = Console.ReadLine()!;
+                    loggedInPerson = new Person(personnummer, lösenord);
+
+                    if (personnummer1 == personnummer && lösenord1 == lösenord)
+                    {
+                        homepage.Hemsida();
+                        return;
+                    }
+                }
+            }
+
+            Login.LoggaIn();
+        }
 
 
     
-            */
-        }
+            
+        
 
 
     }
