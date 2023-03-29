@@ -32,6 +32,10 @@ namespace Bibliotek
             this.personnummer = personnummer;
             this.lösenord = lösenord;
         }
+        public Person(int personnummer)
+        {
+            this.personnummer = personnummer;
+        }
     }
 }
 

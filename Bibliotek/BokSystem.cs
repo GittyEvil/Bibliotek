@@ -32,9 +32,10 @@ namespace Bibliotek
             {
                 string[] bookinformation = line.Split(" ");
                 int loanedbookId = Int32.Parse(bookinformation[0]);
-                string personId = bookinformation[1];
+                int personId = Int32.Parse(bookinformation[1]);
+                string ledig = bookinformation[2];
 
-                if (bok.Serienummer == loanedbookId && personId == loggedInPerson!.id)
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson!.personnummer && ledig == "ledig")
                 {
                     return true;
                 }
@@ -108,13 +109,11 @@ namespace Bibliotek
             return sökning;
         }
         //tar in en specifik bok och kollar om den är ledig, är den så läggs den till i lånadeböckertxt med id och serienummer
-        public void Lånabok(Bok bok)
+        public void Rentbooks(Bok bok)
         {
-            if(bok.Ledig)
-            {
                 if (bok.Ledig)
                 {
-                    var line = $"{bok.Serienummer} {loggedInPerson!.id}";
+                    var line = $"{bok.Serienummer} {loggedInPerson!.personnummer} {bok.Ledig = false}";
                     bok.Ledig = false;
 
                     loanedbooks.Add(line);
@@ -126,32 +125,20 @@ namespace Bibliotek
                 {
                     Console.WriteLine($"Boken '{bok.Titel}' är redan utlånad.");
                 }
-            }
         }
         //hanterar personer som loggar in
         void LoggedUser()
         {
-            /*
-            string[] personInfo = File.ReadAllLines(kontonFilePath);
-            string[] personLista = personInfo[0].Split(" ");
-            string personId = personLista[0];
-            string förnamn= personLista[1];
-
-            loggedInPerson = new Person(personId, förnamn);
-            */
-
-            //string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\Konton.json");
             dynamic personData = JsonConvert.DeserializeObject<dynamic>(userData)!;
             foreach(var i in personData)
             {
-                loggedInPerson = new Person((string)i.personnummer, (string)i.lösenord);
+                loggedInPerson = new Person((int)i.personnummer, (int)i.lösenord);
             }
         }
         //laddar upp böcker
         
         void LoadBooks()
         {
-            //string Data = File.ReadAllText("C:\\Users\\adrian.stude\\Documents\\Prog2\\Bibliotek\\bibliotek\\Bibliotek\\böcker.json");
             dynamic booksData = JsonConvert.DeserializeObject<dynamic>(Data)!;
 
             foreach (var i in booksData!)
@@ -180,9 +167,9 @@ namespace Bibliotek
                 var line = loanedbooks[i];
                 string[] bookinformation = line.Split(" ");
                 int loanedbookId = Int32.Parse(bookinformation[0]);
-                string personId = bookinformation[1];
+                int personId = Int32.Parse(bookinformation[1]);
 
-                if (bok.Serienummer == loanedbookId && personId == loggedInPerson!.id)
+                if (bok.Serienummer == loanedbookId && personId == loggedInPerson!.personnummer)
                 {
                     bookremover = i;
                 }

@@ -105,7 +105,7 @@ namespace Bibliotek
             
             else if (choice == "2" && bok.Ledig)
             {
-                BokSystem.Lånabok(bok);
+                BokSystem.Rentbooks(bok);
 
                 //Lånabok();
             }
@@ -140,7 +140,7 @@ namespace Bibliotek
 
                 if (hyraellerej == "1")
                 {
-                    BokSystem.Lånabok(bok);
+                    BokSystem.Rentbooks(bok);
                     //Lånabok();
                 }
 

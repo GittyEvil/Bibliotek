@@ -34,6 +34,10 @@ namespace Bibliotek
 
             //kollar så input är likadan som det som finns i json filen, om det stämmer = inloggad
             string val = Console.ReadLine()!;
+            Console.WriteLine("Vänligen skriv in ditt personnummer");
+            string personnummer = Console.ReadLine()!;
+            Console.WriteLine("Skriv in ditt lösenord");
+            string lösenord = Console.ReadLine()!;
             foreach (var i in personData)
             {
                 var personnummer1 = (string)i["personnummer"];
@@ -41,10 +45,6 @@ namespace Bibliotek
 
                 if (val == "2")
                 {
-                    Console.WriteLine("Vänligen skriv in ditt personnummer");
-                    string personnummer = Console.ReadLine()!;
-                    Console.WriteLine("Skriv in ditt lösenord");
-                    string lösenord = Console.ReadLine()!;
                     loggedInPerson = new Person(personnummer, lösenord);
 
                     if (personnummer1 == personnummer && lösenord1 == lösenord)
@@ -54,6 +54,7 @@ namespace Bibliotek
                     }
                 }
             }
+            /*
             //för bibliotikarier
             foreach (var i in personbibData)
             {
@@ -74,9 +75,11 @@ namespace Bibliotek
                         return;
                     }
                 }
-            }
 
+            }
+            */
             Login.LoggaIn();
+            
         }
 
 

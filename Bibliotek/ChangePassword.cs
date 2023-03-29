@@ -34,7 +34,7 @@ namespace Bibliotek
                 {
                     if (loggedInPerson!.personnummer == (int)i.personnummer)
                     {
-                        
+
                         Console.WriteLine("Skriv ditt nya lösenord:");
                         string newPassword = Console.ReadLine();
 
@@ -47,6 +47,7 @@ namespace Bibliotek
 
                         Console.WriteLine("Lösenordet har uppdaterats!");
                         break;
+
                     }
                 }
             }
@@ -60,4 +61,5 @@ namespace Bibliotek
         }
 
     }
+}
 

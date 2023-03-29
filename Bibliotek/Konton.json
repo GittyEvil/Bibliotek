@@ -1,1 +1,16 @@
-[{"förnamn":"Adrian","efternamn":"Stude","personnummer":123,"lösenord":1234,"id":1},{"förnamn":"test","efternamn":"test","id":null,"personnummer":234,"lösenord":2334},{"förnamn":"test","efternamn":"test","id":null,"personnummer":2,"lösenord":2}]
+[
+  {
+    "förnamn": "Adrian",
+    "efternamn": "Stude",
+    "personnummer": 123,
+    "lösenord": 1234,
+    "id": 1
+  },
+  {
+    "förnamn": "test",
+    "efternamn": "test",
+    "id": null,
+    "personnummer": 234,
+    "lösenord": 2334
+  }
+]
